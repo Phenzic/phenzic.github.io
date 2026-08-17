@@ -1,6 +1,6 @@
-# LordGhostX Portfolio
+# Phenzic Portfolio
 
-A simple static portfolio for LordGhostX, built with HTML, Bootstrap CDN, CSS, and plain JavaScript data files. It is designed to run directly on GitHub Pages without a build step.
+A simple static portfolio for Phenzic, built with HTML, Bootstrap CDN, CSS, and plain JavaScript data files. It is designed to run directly on GitHub Pages without a build step.
 
 ## Pages
 
