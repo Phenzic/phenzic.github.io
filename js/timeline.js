@@ -94,7 +94,7 @@ const timelineItems = [
     year: "2018",
     date: "April",
     descriptionHtml:
-      'Released the first version of <a href="https://github.com/LordGhostX/HashDB">HashDB</a>, a lightweight NoSQL database built with Python.',
+      'Released the first version of <a href="https://github.com/Phenzic/HashDB">HashDB</a>, a lightweight NoSQL database built with Python.',
   },
   {
     year: "2018",
@@ -192,13 +192,13 @@ const timelineItems = [
     year: "2020",
     date: "April",
     descriptionHtml:
-      'Published my first technical article on <a href="https://lordghostx.hashnode.dev/">Hashnode</a>.',
+      'Published my first technical article on <a href="https://phenzic.hashnode.dev/">Hashnode</a>.',
   },
   {
     year: "2020",
     date: "May",
     descriptionHtml:
-      'Launched <a href="https://github.com/LordGhostX/animeX-v2">animeX v2</a> with improved features.',
+      'Launched <a href="https://github.com/Phenzic/animeX-v2">animeX v2</a> with improved features.',
   },
   {
     year: "2020",
@@ -269,19 +269,19 @@ const timelineItems = [
     year: "2020",
     date: "November",
     descriptionHtml:
-      'Signed my first paid technical-writing contract with <a href="https://dev.to/lordghostx/building-a-telegram-bot-with-python-and-fauna-494i">Fauna</a>.',
+      'Signed my first paid technical-writing contract with <a href="https://dev.to/phenzic/building-a-telegram-bot-with-python-and-fauna-494i">Fauna</a>.',
   },
   {
     year: "2020",
     date: "December",
     descriptionHtml:
-      'Gave a talk on technical writing at DSC Federal Polytechnic Bida. Slides and recording are available <a href="https://twitter.com/LordGhostX/status/1343865324404355072?s=20">here</a>.',
+      'Gave a talk on technical writing at DSC Federal Polytechnic Bida. Slides and recording are available <a href="https://twitter.com/Phenzic/status/1343865324404355072?s=20">here</a>.',
   },
   {
     year: "2020",
     date: "December",
     descriptionHtml:
-      'Published my <a href="https://twitter.com/LordGhostX/status/1344670863182983171?s=20">2020 year in review</a>.',
+      'Published my <a href="https://twitter.com/Phenzic/status/1344670863182983171?s=20">2020 year in review</a>.',
   },
   {
     year: "2021",
@@ -299,7 +299,7 @@ const timelineItems = [
     year: "2021",
     date: "February",
     descriptionHtml:
-      'Featured in the <a href="https://twitter.com/lordghostx/status/1365006940636672002?s=21">Fauna Community Spotlight</a> for open-source contributions.',
+      'Featured in the <a href="https://twitter.com/phenzic/status/1365006940636672002?s=21">Fauna Community Spotlight</a> for open-source contributions.',
   },
   {
     year: "2021",
@@ -346,7 +346,7 @@ const timelineItems = [
     year: "2021",
     date: "October",
     descriptionHtml:
-      'Received <a href="https://twitter.com/LordGhostX/status/1447616443713998849">MongoDB swag</a> for community contributions.',
+      'Received <a href="https://twitter.com/Phenzic/status/1447616443713998849">MongoDB swag</a> for community contributions.',
   },
   {
     year: "2021",
@@ -364,7 +364,7 @@ const timelineItems = [
     year: "2021",
     date: "December",
     descriptionHtml:
-      'Published my <a href="https://twitter.com/LordGhostX/status/1476351288099147778?s=20">2021 year in review</a>.',
+      'Published my <a href="https://twitter.com/Phenzic/status/1476351288099147778?s=20">2021 year in review</a>.',
   },
   {
     year: "2022",
@@ -382,7 +382,7 @@ const timelineItems = [
     year: "2022",
     date: "March",
     descriptionHtml:
-      'Purchased my first <a href="https://twitter.com/LordGhostX/status/1502054958224523265?s=20&t=Qn8fribItlrG9LYKgVAjOg">NFT domain</a> from Unstoppable Domains.',
+      'Purchased my first <a href="https://twitter.com/Phenzic/status/1502054958224523265?s=20&t=Qn8fribItlrG9LYKgVAjOg">NFT domain</a> from Unstoppable Domains.',
   },
   {
     year: "2022",
@@ -394,19 +394,19 @@ const timelineItems = [
     year: "2022",
     date: "April",
     descriptionHtml:
-      'Minted my first NFT, <a href="https://twitter.com/LordGhostX/status/1511518541937360899">Los Muertos World</a>.',
+      'Minted my first NFT, <a href="https://twitter.com/Phenzic/status/1511518541937360899">Los Muertos World</a>.',
   },
   {
     year: "2022",
     date: "April",
     descriptionHtml:
-      'Sold my <a href="https://twitter.com/LordGhostX/status/1513208034796916739">first NFT</a> for 0.5 ETH.',
+      'Sold my <a href="https://twitter.com/Phenzic/status/1513208034796916739">first NFT</a> for 0.5 ETH.',
   },
   {
     year: "2022",
     date: "May",
     descriptionHtml:
-      'Sold my <a href="https://twitter.com/LordGhostX/status/1523124421279461377?s=20&t=sUnhr7DvshI1-vLkrGbxLg">first NFT on Solana</a>.',
+      'Sold my <a href="https://twitter.com/Phenzic/status/1523124421279461377?s=20&t=sUnhr7DvshI1-vLkrGbxLg">first NFT on Solana</a>.',
   },
   {
     year: "2022",
@@ -451,7 +451,7 @@ const timelineItems = [
     year: "2022",
     date: "December",
     descriptionHtml:
-      'Published my <a href="https://twitter.com/LordGhostX/status/1609123395081310208?s=20&t=v9fNZmX-_uHGLj_2SRFv6w">2022 year in review</a>.',
+      'Published my <a href="https://twitter.com/Phenzic/status/1609123395081310208?s=20&t=v9fNZmX-_uHGLj_2SRFv6w">2022 year in review</a>.',
   },
   {
     year: "2023",
@@ -485,7 +485,7 @@ const timelineItems = [
     year: "2023",
     date: "June",
     descriptionHtml:
-      'Spoke at <a href="https://twitter.com/LordGhostX/status/1664988980855668739?s=20">Career Fest</a> in Ilorin to 2,000+ attendees.',
+      'Spoke at <a href="https://twitter.com/Phenzic/status/1664988980855668739?s=20">Career Fest</a> in Ilorin to 2,000+ attendees.',
   },
   {
     year: "2023",
@@ -496,31 +496,31 @@ const timelineItems = [
     year: "2023",
     date: "September",
     descriptionHtml:
-      'Closed a <a href="https://x.com/LordGhostX/status/1708147399644860608?s=20">$90,000 raise</a> for Trade Maven, above the original $30,000 target.',
+      'Closed a <a href="https://x.com/Phenzic/status/1708147399644860608?s=20">$90,000 raise</a> for Trade Maven, above the original $30,000 target.',
   },
   {
     year: "2023",
     date: "November",
     descriptionHtml:
-      'Visited Enugu and Nsukka, and spoke at <a href="https://x.com/LordGhostX/status/1723335006792114385?s=20">Polygon Dev Conference</a>.',
+      'Visited Enugu and Nsukka, and spoke at <a href="https://x.com/Phenzic/status/1723335006792114385?s=20">Polygon Dev Conference</a>.',
   },
   {
     year: "2023",
     date: "December",
     descriptionHtml:
-      'Designed <a href="https://x.com/LordGhostX/status/1735313449654112588?s=20">Operation BattleGrid: Strategic Frontiers</a>, an 11x11 chess variant with modified rules.',
+      'Designed <a href="https://x.com/Phenzic/status/1735313449654112588?s=20">Operation BattleGrid: Strategic Frontiers</a>, an 11x11 chess variant with modified rules.',
   },
   {
     year: "2023",
     date: "December",
     descriptionHtml:
-      'Built <a href="https://x.com/LordGhostX/status/1741129443194634748?s=20">GhostNet</a>, a peer-to-peer decentralized communication protocol.',
+      'Built <a href="https://x.com/Phenzic/status/1741129443194634748?s=20">GhostNet</a>, a peer-to-peer decentralized communication protocol.',
   },
   {
     year: "2023",
     date: "December",
     descriptionHtml:
-      'Published my <a href="https://x.com/LordGhostX/status/1741544247763796286?s=20">2023 year in review</a>.',
+      'Published my <a href="https://x.com/Phenzic/status/1741544247763796286?s=20">2023 year in review</a>.',
   },
 ];
 

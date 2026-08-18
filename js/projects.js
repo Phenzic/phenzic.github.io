@@ -31,7 +31,7 @@ const projects = [
     description:
       "Contributed to the Python SDK for Lighter, improving developer access to exchange infrastructure and programmatic trading workflows.",
     stack: ["Python", "Exchange APIs", "Trading Infrastructure"],
-    githubUrl: "https://github.com/LordGhostX/lighter-python",
+    githubUrl: "https://github.com/Phenzic/lighter-python",
     demoUrl: "",
     featured: false,
   },
@@ -43,7 +43,7 @@ const projects = [
     description:
       "A crypto market research engine used to explore market-making and execution behavior across venues including Hyperliquid, Paradex, Lighter, and other derivatives exchanges.",
     stack: ["Market Making", "Crypto", "Research"],
-    githubUrl: "https://github.com/LordGhostX/dex-market-maker",
+    githubUrl: "https://github.com/Phenzic/dex-market-maker",
     demoUrl: "",
     featured: false,
   },
@@ -55,7 +55,7 @@ const projects = [
     description:
       "Contributed to a curated archive of quantitative finance, trading, MEV, market microstructure, execution, and decentralized market research materials.",
     stack: ["Quant Finance", "Trading Research", "Market Microstructure"],
-    githubUrl: "https://github.com/LordGhostX/quant-scrolls",
+    githubUrl: "https://github.com/Phenzic/quant-scrolls",
     demoUrl: "",
     featured: true,
   },
@@ -67,7 +67,7 @@ const projects = [
     description:
       "Contributed to a high-performance Rust client library for Paradex with REST and WebSocket connectivity, focused on low-latency exchange API access.",
     stack: ["Rust", "Exchange APIs", "Trading"],
-    githubUrl: "https://github.com/LordGhostX/paradex-rs",
+    githubUrl: "https://github.com/Phenzic/paradex-rs",
     demoUrl: "",
     featured: false,
   },
@@ -79,7 +79,7 @@ const projects = [
     description:
       "A Solana atomic arbitrage system using streaming transaction data, graph-based routing, token metadata enrichment, persistent logging, and Jupiter swap construction.",
     stack: ["Solana", "Yellowstone gRPC", "MEV"],
-    githubUrl: "https://github.com/LordGhostX/solana-atomic-arbs",
+    githubUrl: "https://github.com/Phenzic/solana-atomic-arbs",
     demoUrl: "",
     featured: true,
   },
@@ -92,7 +92,7 @@ const projects = [
       "A research-focused project presenting Maven's crypto fund thesis, systematic market analysis, portfolio strategy, and risk-aware digital asset research.",
     stack: ["Crypto", "Portfolio Strategy", "Risk Management"],
     githubUrl: "",
-    demoUrl: "https://lordghostx.eu.pythonanywhere.com",
+    demoUrl: "https://phenzic.eu.pythonanywhere.com",
     featured: false,
   },
   {
@@ -103,7 +103,7 @@ const projects = [
     description:
       "Contributed to the official Python API connector for Bybit, supporting HTTP and WebSocket access for exchange integrations.",
     stack: ["Python", "Exchange APIs", "Trading Infrastructure"],
-    githubUrl: "https://github.com/LordGhostX/pybit",
+    githubUrl: "https://github.com/Phenzic/pybit",
     demoUrl: "",
     featured: false,
   },
@@ -115,7 +115,7 @@ const projects = [
     description:
       "A peer-to-peer, private, permissionless, and decentralized communication protocol inspired by Waku.",
     stack: ["P2P", "Privacy", "Decentralized Protocols"],
-    githubUrl: "https://github.com/LordGhostX/GhostNet",
+    githubUrl: "https://github.com/Phenzic/GhostNet",
     demoUrl: "",
     featured: false,
   },
@@ -127,7 +127,7 @@ const projects = [
     description:
       "A tactical strategy game played on an 11x11 grid, blending chess-like positioning with modern warfare units and unique abilities.",
     stack: ["Game Design", "Strategy", "Grid Systems"],
-    githubUrl: "https://github.com/LordGhostX/battlegrid",
+    githubUrl: "https://github.com/Phenzic/battlegrid",
     demoUrl: "",
     featured: false,
   },
@@ -139,7 +139,7 @@ const projects = [
     description:
       "A Dollar Cost Averaging script for automating scheduled cryptocurrency purchases through a Binance account.",
     stack: ["Python", "Binance", "Crypto Automation"],
-    githubUrl: "https://github.com/LordGhostX/binance-dca",
+    githubUrl: "https://github.com/Phenzic/binance-dca",
     demoUrl: "",
     featured: false,
   },
@@ -151,7 +151,7 @@ const projects = [
     description:
       "A command-line tool for downloading anime directly to a local machine.",
     stack: ["Python", "CLI", "Automation"],
-    githubUrl: "https://github.com/LordGhostX/animeX-v2",
+    githubUrl: "https://github.com/Phenzic/animeX-v2",
     demoUrl: "",
     featured: false,
   },
@@ -163,7 +163,7 @@ const projects = [
     description:
       "A Python script that converts static HTML files into Django or Flask templates by automatically formatting static asset references.",
     stack: ["Python", "Django/Flask", "Developer Tools"],
-    githubUrl: "https://github.com/LordGhostX/restatic",
+    githubUrl: "https://github.com/Phenzic/restatic",
     demoUrl: "",
     featured: false,
   },
@@ -175,7 +175,7 @@ const projects = [
     description:
       "A basic crypto arbitrage platform designed to compare opportunities across centralized and decentralized exchanges.",
     stack: ["Crypto", "Arbitrage", "MEV"],
-    githubUrl: "https://github.com/LordGhostX/cc-arbitrage",
+    githubUrl: "https://github.com/Phenzic/cc-arbitrage",
     demoUrl: "",
     featured: false,
   },
@@ -187,7 +187,7 @@ const projects = [
     description:
       "A command-line tool for converting Google Docs files into Markdown.",
     stack: ["Markdown", "Google Docs", "Automation"],
-    githubUrl: "https://github.com/LordGhostX/docs-to-md-cli",
+    githubUrl: "https://github.com/Phenzic/docs-to-md-cli",
     demoUrl: "",
     featured: false,
   },
@@ -199,7 +199,7 @@ const projects = [
     description:
       "A Telegram bot for downloading anime, getting recommendations, and fetching anime information without ads.",
     stack: ["Telegram Bot", "Python", "Automation"],
-    githubUrl: "https://github.com/LordGhostX/animehive",
+    githubUrl: "https://github.com/Phenzic/animehive",
     demoUrl: "",
     featured: false,
   },
@@ -211,7 +211,7 @@ const projects = [
     description:
       "A Telegram-based job alert system that sends personalized programming job postings to users.",
     stack: ["Telegram Bot", "Jobs", "Automation"],
-    githubUrl: "https://github.com/LordGhostX/devjobhub",
+    githubUrl: "https://github.com/Phenzic/devjobhub",
     demoUrl: "",
     featured: false,
   },
@@ -223,7 +223,7 @@ const projects = [
     description:
       "A security utility for checking whether a password has appeared in known data breaches.",
     stack: ["Security", "Passwords", "Data Breach Checks"],
-    githubUrl: "https://github.com/LordGhostX/pwnedpasswords",
+    githubUrl: "https://github.com/Phenzic/pwnedpasswords",
     demoUrl: "",
     featured: false,
   },
@@ -235,7 +235,7 @@ const projects = [
     description:
       "An online platform exploring the use of AI to automate hospital diagnostics, with early work across dashboards, backend integration, and model serving.",
     stack: ["AI", "Healthcare", "Diagnostics"],
-    githubUrl: "https://github.com/LordGhostX/QuickMed",
+    githubUrl: "https://github.com/Phenzic/QuickMed",
     demoUrl: "",
     featured: false,
   },
@@ -246,7 +246,7 @@ const projects = [
     sortDate: "2019-09-24",
     description: "A tool for visualizing neural network architectures.",
     stack: ["Neural Networks", "Visualization", "Machine Learning"],
-    githubUrl: "https://github.com/LordGhostX/NNDraw",
+    githubUrl: "https://github.com/Phenzic/NNDraw",
     demoUrl: "",
     featured: false,
   },
@@ -258,7 +258,7 @@ const projects = [
     description:
       "A Django web application for converting images between formats including PNG, JPEG, GIF, TIFF, WebP, PDF, and more.",
     stack: ["Django", "Image Processing", "Web App"],
-    githubUrl: "https://github.com/LordGhostX/Im-Conv",
+    githubUrl: "https://github.com/Phenzic/Im-Conv",
     demoUrl: "",
     featured: false,
   },
@@ -270,7 +270,7 @@ const projects = [
     description:
       "A Python CLI password manager for generating, storing, and retrieving encrypted passwords using SQLite and encryption primitives.",
     stack: ["Python", "Encryption", "Security"],
-    githubUrl: "https://github.com/LordGhostX/PVault",
+    githubUrl: "https://github.com/Phenzic/PVault",
     demoUrl: "",
     featured: false,
   },
@@ -282,7 +282,7 @@ const projects = [
     description:
       "A certificate generation tool that places participant data onto image templates using CSV inputs, built to remove repetitive manual certificate design work.",
     stack: ["Python", "Image Processing", "Automation"],
-    githubUrl: "https://github.com/LordGhostX/Cert-Gen",
+    githubUrl: "https://github.com/Phenzic/Cert-Gen",
     demoUrl: "",
     featured: false,
   },
@@ -294,7 +294,7 @@ const projects = [
     description:
       "A lightweight NoSQL-style database library implemented with JSON-based data storage.",
     stack: ["Python", "NoSQL", "Database"],
-    githubUrl: "https://github.com/LordGhostX/HashDB",
+    githubUrl: "https://github.com/Phenzic/HashDB",
     demoUrl: "",
     featured: false,
   },
@@ -306,7 +306,7 @@ const projects = [
     description:
       "A browser-based viewer for Jupyter Notebook files, letting users inspect notebook contents without launching Anaconda or Jupyter locally.",
     stack: ["Jupyter", "Browser Tool", "Developer Tools"],
-    githubUrl: "https://github.com/LordGhostX/IPYNB-viewer",
+    githubUrl: "https://github.com/Phenzic/IPYNB-viewer",
     demoUrl: "",
     featured: false,
   },

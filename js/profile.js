@@ -1,6 +1,6 @@
 const profile = {
-  brandName: "LordGhostX",
-  displayName: "Solomon Esenyi",
+  brandName: "Phenzic",
+  displayName: "Mayowa Julius",
   headline:
     "Software engineer and technical writer building developer infrastructure, blockchain data systems, and API documentation.",
   bio: "I turn complex systems into usable products, clear docs, and better developer onboarding. My work spans backend services, protocol documentation, trading research systems, and DevRel programs for technical teams.",
@@ -28,37 +28,31 @@ const profile = {
       style: "outline",
       icon: "fa-pen-nib",
     },
-    {
-      label: "View Resume",
-      href: "https://docs.google.com/document/d/1I41lyQg4wmd4q9bX_cH1A-fiJ2jVuvJ67wPyVrzqiIk/edit?usp=sharing",
-      style: "outline",
-      icon: "fa-file-alt",
-    },
   ],
   socials: [
     {
       label: "Email",
-      href: "mailto:dosolomon5@gmail.com",
+      href: "mailto:ogungbolamayowa@gmail.com",
       icon: "fa-solid fa-envelope",
     },
     {
       label: "Calendly",
-      href: "https://calendly.com/LordGhostX",
+      href: "https://calendly.com/Phenzic",
       icon: "fa-solid fa-calendar-days",
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/solomon-esenyi",
+      href: "https://www.linkedin.com/in/mayowa-ogungbola-a71810229/",
       icon: "fa-brands fa-linkedin",
     },
     {
       label: "GitHub",
-      href: "https://github.com/LordGhostX",
+      href: "https://github.com/Phenzic",
       icon: "fa-brands fa-github",
     },
     {
       label: "X",
-      href: "https://x.com/LordGhostX",
+      href: "https://x.com/Phenzic",
       icon: "fa-brands fa-x-twitter",
     },
   ],

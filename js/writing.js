@@ -7,7 +7,7 @@ const writingItems = [
     summary:
       "A hands-on guide to building, structuring, deploying, and integrating a low-level Solana program using the Pinocchio Rust library.",
     tags: ["Solana", "Rust", "Blockchain Development"],
-    url: "https://gist.github.com/LordGhostX/52ccaaf5752e6829b29646620d1a9ce7",
+    url: "https://gist.github.com/Phenzic/52ccaaf5752e6829b29646620d1a9ce7",
     featured: false,
   },
   {
@@ -30,7 +30,7 @@ const writingItems = [
     summary:
       "An analysis of Solana’s SIMD-0204 proposal and how slashing could strengthen validator accountability and network security.",
     tags: ["Solana", "Validators", "Protocol Research"],
-    url: "https://lordghostx.hashnode.dev/simd-0204-building-the-foundation-for-slashing-on-solana",
+    url: "https://phenzic.hashnode.dev/simd-0204-building-the-foundation-for-slashing-on-solana",
     featured: false,
   },
   {
@@ -41,7 +41,7 @@ const writingItems = [
     summary:
       "A research article on Solana’s real-time performance goals, covering latency, throughput, responsiveness, and infrastructure for consumer-grade blockchain apps.",
     tags: ["Solana", "Performance", "Web3 Infrastructure"],
-    url: "https://lordghostx.hashnode.dev/solana-at-web2-speed-real-time-performance-without-fragmentation",
+    url: "https://phenzic.hashnode.dev/solana-at-web2-speed-real-time-performance-without-fragmentation",
     featured: true,
   },
   {
@@ -52,7 +52,7 @@ const writingItems = [
     summary:
       "An overview of Starknet Improvement Proposals and how they support protocol governance, ecosystem coordination, and network evolution.",
     tags: ["Starknet", "Governance", "Protocol Research"],
-    url: "https://lordghostx.hashnode.dev/starknet-improvement-proposals-snips",
+    url: "https://phenzic.hashnode.dev/starknet-improvement-proposals-snips",
     featured: false,
   },
   {
@@ -63,7 +63,7 @@ const writingItems = [
     summary:
       "An exploration of Starknet’s decentralization roadmap, sequencer architecture, and the potential impact of decentralization on MEV dynamics.",
     tags: ["Starknet", "MEV", "Blockchain Architecture"],
-    url: "https://dev.to/lordghostx/decentralizing-starknet-architecture-plans-and-mev-impact-7ck",
+    url: "https://dev.to/phenzic/decentralizing-starknet-architecture-plans-and-mev-impact-7ck",
     featured: true,
   },
   {
@@ -74,7 +74,7 @@ const writingItems = [
     summary:
       "A practical guide to transforming Starknet on-chain data into dashboards and visual insights using Dune’s querying and visualization tools.",
     tags: ["Starknet", "Dune Analytics", "Onchain Data"],
-    url: "https://dev.to/lordghostx/queries-to-insights-visualizing-starknet-data-with-dune-j8p",
+    url: "https://dev.to/phenzic/queries-to-insights-visualizing-starknet-data-with-dune-j8p",
     featured: false,
   },
   {
@@ -85,7 +85,7 @@ const writingItems = [
     summary:
       "A survey of Starknet protocols and decentralized applications, highlighting their core features and potential MEV opportunities.",
     tags: ["Starknet", "DeFi", "MEV"],
-    url: "https://dev.to/lordghostx/starknet-protocols-key-features-and-mev-opportunities-574i",
+    url: "https://dev.to/phenzic/starknet-protocols-key-features-and-mev-opportunities-574i",
     featured: false,
   },
   {
@@ -96,7 +96,7 @@ const writingItems = [
     summary:
       "An introductory article explaining maximal extractable value, common MEV strategies, and how MEV applies to Starknet’s Layer 2 ecosystem.",
     tags: ["Starknet", "MEV", "Blockchain"],
-    url: "https://dev.to/lordghostx/introduction-to-mev-on-starknet-1o0l",
+    url: "https://dev.to/phenzic/introduction-to-mev-on-starknet-1o0l",
     featured: false,
   },
   {
@@ -283,7 +283,7 @@ const writingItems = [
     summary:
       "A tutorial on building and deploying a Flask application while using Doppler to manage secrets and environment variables.",
     tags: ["Python", "Flask", "Secrets Management"],
-    url: "https://dev.to/lordghostx/build-and-deploy-a-web-app-with-python-flask-and-doppler-9jm",
+    url: "https://dev.to/phenzic/build-and-deploy-a-web-app-with-python-flask-and-doppler-9jm",
     featured: false,
   },
   {
@@ -327,7 +327,7 @@ const writingItems = [
     summary:
       "A tutorial on building a Flask contact manager with HarperDB, covering database setup and CRUD functionality.",
     tags: ["Python", "Flask", "HarperDB"],
-    url: "https://dev.to/lordghostx/building-a-contact-manager-with-python-flask-and-harperdb-1h53",
+    url: "https://dev.to/phenzic/building-a-contact-manager-with-python-flask-and-harperdb-1h53",
     featured: false,
   },
   {
@@ -339,7 +339,7 @@ const writingItems = [
     summary:
       "A tutorial on adding two-factor authentication to a Flask app using PyOTP and Fauna’s authentication features.",
     tags: ["Python", "Two-Factor Authentication", "Fauna"],
-    url: "https://dev.to/lordghostx/implementing-two-factor-authentication-with-flask-pyotp-and-fauna-4jf3",
+    url: "https://dev.to/phenzic/implementing-two-factor-authentication-with-flask-pyotp-and-fauna-4jf3",
     featured: false,
   },
   {
@@ -362,7 +362,7 @@ const writingItems = [
     summary:
       "A Flask tutorial covering authentication, authorization, user identity, and session management with Fauna.",
     tags: ["Python", "Authentication", "Fauna"],
-    url: "https://dev.to/lordghostx/managing-user-authentication-and-sessions-with-fauna-and-flask-5h5h",
+    url: "https://dev.to/phenzic/managing-user-authentication-and-sessions-with-fauna-and-flask-5h5h",
     featured: false,
   },
   {
@@ -373,7 +373,7 @@ const writingItems = [
     summary:
       "A project-based tutorial for building and deploying a Pastebin-style application with Python, Flask, Fauna, and Heroku.",
     tags: ["Python", "Flask", "Fauna"],
-    url: "https://dev.to/lordghostx/building-faunabin-a-pastebin-clone-with-python-and-fauna-436b",
+    url: "https://dev.to/phenzic/building-faunabin-a-pastebin-clone-with-python-and-fauna-436b",
     featured: false,
   },
   {
@@ -384,7 +384,7 @@ const writingItems = [
     summary:
       "A deployment guide showing how to host Flask applications on cPanel-based hosting platforms such as Namecheap.",
     tags: ["Python", "Flask", "Deployment"],
-    url: "https://dev.to/lordghostx/how-to-host-flask-applications-on-namecheap-cpanel-299b",
+    url: "https://dev.to/phenzic/how-to-host-flask-applications-on-namecheap-cpanel-299b",
     featured: false,
   },
   {
@@ -395,7 +395,7 @@ const writingItems = [
     summary:
       "A beginner-friendly introduction to cybersecurity concepts, cyber threats, attacks, and basic defensive thinking.",
     tags: ["Cybersecurity", "Security", "Programming Fundamentals"],
-    url: "https://dev.to/lordghostx/a-friendly-introduction-to-cybersecurity-1e3a",
+    url: "https://dev.to/phenzic/a-friendly-introduction-to-cybersecurity-1e3a",
     featured: false,
   },
   {
@@ -406,7 +406,7 @@ const writingItems = [
     summary:
       "An explanatory guide to the Zen of Python and how its principles shape readable, maintainable Python code.",
     tags: ["Python", "Programming Fundamentals", "Code Quality"],
-    url: "https://dev.to/lordghostx/the-zen-of-python-an-in-depth-explanation-45fm",
+    url: "https://dev.to/phenzic/the-zen-of-python-an-in-depth-explanation-45fm",
     featured: false,
   },
   {
@@ -417,7 +417,7 @@ const writingItems = [
     summary:
       "A project tutorial for building and deploying a serverless URL shortener with Python, Flask, Fauna, and Heroku.",
     tags: ["Python", "Serverless", "Fauna"],
-    url: "https://dev.to/lordghostx/build-and-deploy-a-serverless-url-shortener-with-python-and-fauna-3077",
+    url: "https://dev.to/phenzic/build-and-deploy-a-serverless-url-shortener-with-python-and-fauna-3077",
     featured: false,
   },
   {
@@ -428,7 +428,7 @@ const writingItems = [
     summary:
       "A tutorial on building a Telegram todo-list bot with Python while using Fauna as a serverless database backend.",
     tags: ["Python", "Telegram Bot", "Fauna"],
-    url: "https://dev.to/lordghostx/building-a-telegram-bot-with-python-and-fauna-494i",
+    url: "https://dev.to/phenzic/building-a-telegram-bot-with-python-and-fauna-494i",
     featured: false,
   },
   {
@@ -440,7 +440,7 @@ const writingItems = [
     summary:
       "A Python security tutorial showing how to encrypt identity data with Fernet and represent it through QR codes.",
     tags: ["Python", "Encryption", "Cybersecurity"],
-    url: "https://dev.to/lordghostx/building-a-qr-code-identity-system-with-fernet-symmetric-encryption-algorithm-in-python-2ffd",
+    url: "https://dev.to/phenzic/building-a-qr-code-identity-system-with-fernet-symmetric-encryption-algorithm-in-python-2ffd",
     featured: false,
   },
 ];
