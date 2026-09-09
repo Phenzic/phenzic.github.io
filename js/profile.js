@@ -28,6 +28,12 @@ const profile = {
       style: "outline",
       icon: "fa-pen-nib",
     },
+    {
+      label: "View Resume",
+      href: "#",
+      style: "outline",
+      icon: "fa-file-alt",
+    },
   ],
   socials: [
     {
