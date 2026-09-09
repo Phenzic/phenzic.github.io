@@ -105,8 +105,8 @@
 
     target.innerHTML = `
       <div class="col-12">
-        <div class="content-card">
-          <p class="mb-0 text-secondary">${escapeHtml(message)}</p>
+        <div class="content-card text-center py-5">
+          <p class="mb-0 text-secondary fs-5">${escapeHtml(message)}</p>
         </div>
       </div>
     `;
@@ -192,6 +192,23 @@
       profile.socials,
     );
 
+    const statsEl = document.getElementById("hero-stats");
+    if (statsEl && Array.isArray(profile.stats)) {
+      statsEl.innerHTML = profile.stats
+        .map(
+          (item) =>
+            `<div class="col-6 col-lg-3"><div class="stat-tile"><div class="stat-value">${escapeHtml(item.value)}</div><div class="stat-label">${escapeHtml(item.label)}</div></div></div>`,
+        )
+        .join("");
+    }
+
+    const clientsEl = document.getElementById("hero-clients");
+    if (clientsEl && Array.isArray(profile.clients)) {
+      clientsEl.innerHTML = profile.clients
+        .map((name) => `<span class="client-chip">${escapeHtml(name)}</span>`)
+        .join("");
+    }
+
     document.getElementById("hero-actions").innerHTML = profile.ctas
       .map((cta) => {
         return `
@@ -214,7 +231,7 @@
 
   function renderProjectCards(target, items) {
     if (!items.length) {
-      renderEmpty(target, "Projects will appear here.");
+      renderEmpty(target, "No projects match your filter.");
       return;
     }
 
@@ -237,7 +254,7 @@
 
   function renderWritingCards(target, items) {
     if (!items.length) {
-      renderEmpty(target, "Writing will appear here.");
+      renderEmpty(target, "No articles match your filter.");
       return;
     }
 
@@ -285,6 +302,8 @@
     renderSocialLinks,
     renderTags,
     renderProjectLinks,
+    renderProjectCards,
+    renderWritingCards,
     sortRecentFirst,
     sortTimelineRecentFirst,
   };

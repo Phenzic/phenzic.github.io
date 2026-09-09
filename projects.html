@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
             name="description"
-            content="Projects by Mayowa Julius across trading research, web development, decentralized protocols, game design, and open-source systems."
+            content="Projects by Mayowa Julius Ogungbola — Technical Writer & Developer Advocate. Builds spanning trading research, Web3 infrastructure, developer platforms, and open source."
         />
-        <title>Mayowa Julius | Projects</title>
+        <meta name="theme-color" content="#090d12" />
+        <title>Projects — Mayowa Julius Ogungbola</title>
         <link
             rel="icon"
             href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314566a'/%3E%3Cpath d='M9 21h14v3H9zM10 8h12l-2 10h-8z' fill='white'/%3E%3C/svg%3E"
@@ -28,18 +29,37 @@
         <main>
             <section class="page-header">
                 <div class="container">
-                    <p class="eyebrow mb-2">Builds & Experiments</p>
+                    <p class="eyebrow mb-2">Builds &amp; Experiments</p>
                     <h1 class="display-5 fw-bold mb-3">Projects</h1>
                     <p class="text-secondary fs-5 mb-0">
-                        Shipped tools, prototypes, and experiments across
-                        trading research, web development, decentralized
-                        protocols, game design, and open source.
+                        Shipped tools, prototypes, and open-source contributions across
+                        trading research, Web3 infrastructure, developer platforms, and automation.
                     </p>
                 </div>
             </section>
 
             <section class="section-block page-content">
                 <div class="container">
+                    <div class="filter-bar d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                        <div class="search-input-wrapper flex-grow-1">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <input
+                                type="text"
+                                id="project-search"
+                                class="form-control search-input"
+                                placeholder="Search projects by title, stack, or tag..."
+                                aria-label="Search projects"
+                            />
+                        </div>
+                        <div id="project-filters" class="d-flex flex-wrap gap-2">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="trading">Trading</button>
+                            <button class="filter-btn" data-filter="solana">Solana</button>
+                            <button class="filter-btn" data-filter="python">Python</button>
+                            <button class="filter-btn" data-filter="rust">Rust</button>
+                            <button class="filter-btn" data-filter="mev">MEV</button>
+                        </div>
+                    </div>
                     <div id="projects-list" class="row g-4"></div>
                 </div>
             </section>

@@ -2,18 +2,32 @@ const profile = {
   brandName: "Phenzic",
   displayName: "Mayowa Julius",
   headline:
-    "Software engineer and technical writer building developer infrastructure, blockchain data systems, and API documentation.",
-  bio: "I turn complex systems into usable products, clear docs, and better developer onboarding. My work spans backend services, protocol documentation, trading research systems, and DevRel programs for technical teams.",
+    "Software engineer and technical writer building developer platforms, API documentation, and developer experience across fintech and Web3.",
+  bio: "I turn complex systems into clear docs, strong APIs, and better developer onboarding. My work spans developer documentation, DevRel programs, and backend services for payments and blockchain platforms.",
   roles: [
-    "Software Engineering",
-    "Algorithmic Trading",
-    "Developer Relations",
     "Technical Writing",
+    "Developer Advocacy",
+    "API Documentation",
+    "Developer Experience",
+  ],
+  stats: [
+    { value: "6+", label: "Years engineering & docs" },
+    { value: "100k+", label: "Developers reached" },
+    { value: "200+", label: "Ecosystem partners served" },
+    { value: "12+", label: "Teams & clients" },
+  ],
+  clients: [
+    "Flutterwave",
+    "Celo Foundation",
+    "Alchemy",
+    "Hackmamba",
+    "Fuel Labs",
+    "100ms",
   ],
   focus: [
-    "Low-latency data pipelines and trading research systems.",
     "API docs, SDK guides, onboarding, and DevRel programs.",
-    "Blockchain infrastructure across Solana, Ethereum, Starknet, and Waku.",
+    "Docs-as-code systems, information architecture, and content strategy.",
+    "Developer platforms across fintech payments and Web3 ecosystems.",
   ],
   ctas: [
     {
@@ -30,7 +44,7 @@ const profile = {
     },
     {
       label: "View Resume",
-      href: "#",
+      href: "https://docs.google.com/document/d/1wdVSSTVTnQa0efjpq_GgCwUNqgr474ObMxwoHAQcTWE/edit?tab=t.0#heading=h.86lk0ngqyw5f",
       style: "outline",
       icon: "fa-file-alt",
     },
@@ -63,5 +77,5 @@ const profile = {
     },
   ],
   footerText:
-    "Developer infrastructure, technical writing, blockchain systems, and trading research.",
+    "Technical writing, developer advocacy, API documentation, and developer experience.",
 };

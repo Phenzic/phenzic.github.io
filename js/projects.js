@@ -318,33 +318,56 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const {
-    escapeHtml,
-    renderEmpty,
-    renderProjectLinks,
-    renderTags,
-    sortRecentFirst,
-  } = window.Portfolio;
+  const { renderProjectCards, sortRecentFirst } = window.Portfolio;
   const sortedProjects = sortRecentFirst(projects);
 
-  if (!sortedProjects.length) {
-    renderEmpty(target, "Projects will appear here.");
-    return;
+  let activeCategory = "all";
+  let searchQuery = "";
+
+  function applyFilters() {
+    const filtered = sortedProjects.filter((p) => {
+      const matchesSearch =
+        !searchQuery ||
+        p.title.toLowerCase().includes(searchQuery) ||
+        p.description.toLowerCase().includes(searchQuery) ||
+        p.type.toLowerCase().includes(searchQuery) ||
+        p.stack.some((s) => s.toLowerCase().includes(searchQuery));
+
+      if (!matchesSearch) return false;
+
+      if (activeCategory === "all") return true;
+      const cat = activeCategory.toLowerCase();
+      return (
+        p.type.toLowerCase().includes(cat) ||
+        p.stack.some((s) => s.toLowerCase().includes(cat))
+      );
+    });
+
+    renderProjectCards(target, filtered);
   }
 
-  target.innerHTML = sortedProjects
-    .map(
-      (project) => `
-    <div class="col-md-6 col-xl-4">
-      <article class="content-card">
-        <div class="card-meta mb-2">${escapeHtml(project.type)} · ${escapeHtml(project.date)}</div>
-        <h2 class="h4 mb-3">${escapeHtml(project.title)}</h2>
-        <p class="text-secondary">${escapeHtml(project.description)}</p>
-        <div class="d-flex flex-wrap gap-2 mt-4">${renderTags(project.stack)}</div>
-        ${renderProjectLinks(project)}
-      </article>
-    </div>
-  `,
-    )
-    .join("");
+  const searchInput = document.getElementById("project-search");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  const filterContainer = document.getElementById("project-filters");
+  if (filterContainer) {
+    filterContainer.addEventListener("click", (e) => {
+      const btn = e.target.closest(".filter-btn");
+      if (!btn) return;
+
+      filterContainer
+        .querySelectorAll(".filter-btn")
+        .forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeCategory = btn.dataset.filter || "all";
+      applyFilters();
+    });
+  }
+
+  applyFilters();
 });

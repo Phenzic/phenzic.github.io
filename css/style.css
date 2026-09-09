@@ -51,6 +51,7 @@ a:hover {
     border-bottom: 1px solid var(--line);
     background: rgba(9, 13, 18, 0.94);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar-brand {
@@ -232,6 +233,7 @@ a:hover {
     border: 1px solid var(--line);
     border-radius: 8px;
     text-decoration: none;
+    transition: all 160ms ease;
 }
 
 .social-link:hover {
@@ -328,6 +330,119 @@ a:hover {
     outline-offset: 3px;
 }
 
+/* --- Stats band + clients --- */
+.stats-band {
+    padding: 2.25rem 0;
+    background: var(--surface-muted);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.stat-tile {
+    height: 100%;
+    padding: 1.1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.stat-value {
+    color: var(--ink);
+    font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.stat-label {
+    margin-top: 0.3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.clients-row {
+    margin-top: 1.75rem;
+}
+
+.clients-row .client-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.9rem;
+    padding: 0.3rem 0.85rem;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: border-color 160ms ease;
+}
+
+.clients-row .client-chip:hover {
+    border-color: rgba(72, 168, 216, 0.55);
+}
+
+/* --- Interactive App Filter Bar --- */
+.filter-bar {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    border-radius: 8px;
+    padding: 0.5rem 1rem 0.5rem 2.4rem;
+    font-size: 0.95rem;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.search-input:focus {
+    background: var(--bg);
+    color: var(--ink);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(72, 168, 216, 0.2);
+    outline: none;
+}
+
+.search-input-wrapper {
+    position: relative;
+    max-width: 24rem;
+}
+
+.search-input-wrapper i {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+}
+
+.filter-btn {
+    background: var(--surface-muted);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 160ms ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: #ffffff;
+    background: var(--accent-dark);
+    color: #061018;
+    border-color: var(--accent-dark);
+}
+
 @media (max-width: 767.98px) {
     .container {
         padding-right: 1.5rem;
@@ -372,5 +487,9 @@ a:hover {
 
     .display-4 {
         font-size: 2.5rem;
+    }
+
+    .search-input-wrapper {
+        max-width: 100%;
     }
 }

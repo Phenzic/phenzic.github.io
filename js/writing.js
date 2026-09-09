@@ -451,35 +451,56 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const {
-    escapeHtml,
-    linkAttributes,
-    renderEmpty,
-    renderTags,
-    sortRecentFirst,
-  } = window.Portfolio;
+  const { renderWritingCards, sortRecentFirst } = window.Portfolio;
   const sortedWriting = sortRecentFirst(writingItems);
 
-  if (!sortedWriting.length) {
-    renderEmpty(target, "Writing will appear here.");
-    return;
+  let activeCategory = "all";
+  let searchQuery = "";
+
+  function applyFilters() {
+    const filtered = sortedWriting.filter((item) => {
+      const matchesSearch =
+        !searchQuery ||
+        item.title.toLowerCase().includes(searchQuery) ||
+        item.summary.toLowerCase().includes(searchQuery) ||
+        item.platform.toLowerCase().includes(searchQuery) ||
+        item.tags.some((t) => t.toLowerCase().includes(searchQuery));
+
+      if (!matchesSearch) return false;
+
+      if (activeCategory === "all") return true;
+      const cat = activeCategory.toLowerCase();
+      return (
+        item.platform.toLowerCase().includes(cat) ||
+        item.tags.some((t) => t.toLowerCase().includes(cat))
+      );
+    });
+
+    renderWritingCards(target, filtered);
   }
 
-  target.innerHTML = sortedWriting
-    .map(
-      (item) => `
-    <div class="col-md-6 col-xl-4">
-      <article class="content-card">
-        <div class="card-meta mb-2">${escapeHtml(item.platform)} · ${escapeHtml(item.date)}</div>
-        <h2 class="h4 mb-3">${escapeHtml(item.title)}</h2>
-        <p class="text-secondary">${escapeHtml(item.summary)}</p>
-        <div class="d-flex flex-wrap gap-2 mt-4">${renderTags(item.tags)}</div>
-        <a class="btn btn-outline-primary mt-4" href="${escapeHtml(item.url)}"${linkAttributes(item.url)}>
-          <i class="fas fa-arrow-right me-2" aria-hidden="true"></i>Read Article
-        </a>
-      </article>
-    </div>
-  `,
-    )
-    .join("");
+  const searchInput = document.getElementById("writing-search");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  const filterContainer = document.getElementById("writing-filters");
+  if (filterContainer) {
+    filterContainer.addEventListener("click", (e) => {
+      const btn = e.target.closest(".filter-btn");
+      if (!btn) return;
+
+      filterContainer
+        .querySelectorAll(".filter-btn")
+        .forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeCategory = btn.dataset.filter || "all";
+      applyFilters();
+    });
+  }
+
+  applyFilters();
 });
