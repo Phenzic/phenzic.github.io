@@ -234,6 +234,32 @@
     );
   }
 
+  function getPlatformLogo(platform = "") {
+    const p = String(platform).toLowerCase();
+    if (p.includes("lumana")) return "fas fa-video";
+    if (p.includes("zarklab")) return "fas fa-wand-magic-sparkles";
+    if (p.includes("chaos labs")) return "fas fa-flask-vial";
+    if (p.includes("flutterwave")) return "fas fa-bolt";
+    if (p.includes("fuel")) return "fas fa-fire";
+    if (p.includes("celo")) return "fas fa-circle-nodes";
+    if (p.includes("rive")) return "fas fa-film";
+    if (p.includes("github")) return "fab fa-github";
+    if (p.includes("medium")) return "fab fa-medium";
+    if (p.includes("hashnode")) return "fas fa-code";
+    if (p.includes("dev community") || p.includes("dev")) return "fab fa-dev";
+    if (p.includes("logrocket")) return "fas fa-rocket";
+    if (p.includes("loginradius")) return "fas fa-shield-halved";
+    if (p.includes("trading") || p.includes("market")) return "fas fa-chart-line";
+    if (p.includes("open source")) return "fas fa-code-branch";
+    if (p.includes("mev") || p.includes("arbitrage")) return "fas fa-network-wired";
+    if (p.includes("game")) return "fas fa-gamepad";
+    if (p.includes("cli")) return "fas fa-terminal";
+    if (p.includes("bot")) return "fas fa-paper-plane";
+    if (p.includes("security")) return "fas fa-lock";
+    if (p.includes("ai")) return "fas fa-brain";
+    return "fas fa-file-code";
+  }
+
   function renderProjectCards(target, items) {
     if (!items.length) {
       renderEmpty(target, "No projects match your filter.");
@@ -242,17 +268,27 @@
 
     target.innerHTML = items
       .map(
-        (project) => `
+        (project) => {
+          const logoIcon = getPlatformLogo(project.type || project.stack?.[0]);
+          return `
       <div class="col-md-6 col-xl-4">
-        <article class="content-card">
-          <div class="card-meta mb-2">${escapeHtml(project.type)} · ${escapeHtml(project.date)}</div>
-          <h3 class="h4 mb-3">${escapeHtml(project.title)}</h3>
-          <p class="text-secondary">${escapeHtml(project.description)}</p>
-          <div class="d-flex flex-wrap gap-2 mt-4">${renderTags(project.stack)}</div>
+        <article class="content-card d-flex flex-column h-100">
+          <div class="d-flex align-items-start justify-content-between gap-2 mb-3">
+            <div>
+              <div class="card-meta mb-1">${escapeHtml(project.type)} · ${escapeHtml(project.date)}</div>
+              <h3 class="h4 mb-0">${escapeHtml(project.title)}</h3>
+            </div>
+            <div class="card-logo" title="${escapeHtml(project.type)}" aria-hidden="true">
+              <i class="${logoIcon}"></i>
+            </div>
+          </div>
+          <p class="text-secondary flex-grow-1">${escapeHtml(project.description)}</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">${renderTags(project.stack)}</div>
           ${renderProjectLinks(project)}
         </article>
       </div>
-    `,
+    `;
+        },
       )
       .join("");
   }
@@ -277,17 +313,27 @@
 
     target.innerHTML = items
       .map(
-        (item) => `
+        (item) => {
+          const logoIcon = getPlatformLogo(item.platform || item.tags?.[0]);
+          return `
       <div class="col-md-6 col-xl-4">
-        <article class="content-card">
-          <div class="card-meta mb-2">${escapeHtml(item.platform)} · ${escapeHtml(item.date)}</div>
-          <h3 class="h4 mb-3">${escapeHtml(item.title)}</h3>
-          <p class="text-secondary">${escapeHtml(item.summary)}</p>
-          <div class="d-flex flex-wrap gap-2 mt-4">${renderTags(item.tags)}</div>
+        <article class="content-card d-flex flex-column h-100">
+          <div class="d-flex align-items-start justify-content-between gap-2 mb-3">
+            <div>
+              <div class="card-meta mb-1">${escapeHtml(item.platform)} · ${escapeHtml(item.date)}</div>
+              <h3 class="h4 mb-0">${escapeHtml(item.title)}</h3>
+            </div>
+            <div class="card-logo" title="${escapeHtml(item.platform)}" aria-hidden="true">
+              <i class="${logoIcon}"></i>
+            </div>
+          </div>
+          <p class="text-secondary flex-grow-1">${escapeHtml(item.summary)}</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">${renderTags(item.tags)}</div>
           ${renderItemLink(item, linkLabel)}
         </article>
       </div>
-    `,
+    `;
+        },
       )
       .join("");
   }

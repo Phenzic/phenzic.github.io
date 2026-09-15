@@ -189,6 +189,28 @@ a:hover {
     transform: translateY(-2px);
 }
 
+.card-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.15rem;
+    color: var(--accent-dark);
+    background: #0d141c;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: all 160ms ease;
+}
+
+.content-card:hover .card-logo {
+    color: #ffffff;
+    background: var(--accent-dark);
+    color: #061018;
+    border-color: var(--accent-dark);
+}
+
 .card-meta {
     color: var(--muted);
     font-size: 0.92rem;
