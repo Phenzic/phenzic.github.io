@@ -260,6 +260,33 @@
     return "fas fa-file-code";
   }
 
+  function getPublicationLogoUrl(platform = "", articleUrl = "") {
+    const p = String(platform).toLowerCase();
+    const domains = {
+      "flutterwave engineering": "flutterwave.com",
+      "the new stack": "thenewstack.io",
+      "dev community": "dev.to",
+      hashnode: "hashnode.com",
+      "adam the automator": "adamtheautomator.com",
+      "100ms": "100ms.live",
+      medium: "medium.com",
+      logrocket: "logrocket.com",
+      loginradius: "loginradius.com",
+      "github gist": "github.com",
+    };
+
+    const domain = Object.entries(domains).find(([name]) => p.includes(name))?.[1];
+    if (domain) {
+      return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(domain)}`;
+    }
+
+    try {
+      return `https://www.google.com/s2/favicons?sz=128&domain_url=${encodeURIComponent(new URL(articleUrl).origin)}`;
+    } catch {
+      return "";
+    }
+  }
+
   function renderProjectCards(target, items) {
     if (!items.length) {
       renderEmpty(target, "No projects match your filter.");
@@ -314,7 +341,7 @@
     target.innerHTML = items
       .map(
         (item) => {
-          const logoIcon = getPlatformLogo(item.platform || item.tags?.[0]);
+          const publicationLogo = getPublicationLogoUrl(item.platform, item.url);
           return `
       <div class="col-md-6 col-xl-4">
         <article class="content-card d-flex flex-column h-100">
@@ -323,8 +350,8 @@
               <div class="card-meta mb-1">${escapeHtml(item.platform)} · ${escapeHtml(item.date)}</div>
               <h3 class="h4 mb-0">${escapeHtml(item.title)}</h3>
             </div>
-            <div class="card-logo" title="${escapeHtml(item.platform)}" aria-hidden="true">
-              <i class="${logoIcon}"></i>
+            <div class="card-logo publication-logo" title="${escapeHtml(item.platform)}">
+              ${publicationLogo ? `<img src="${escapeHtml(publicationLogo)}" alt="${escapeHtml(item.platform)} logo" loading="lazy" />` : `<i class="${getPlatformLogo(item.platform || item.tags?.[0])}" aria-hidden="true"></i>`}
             </div>
           </div>
           <p class="text-secondary flex-grow-1">${escapeHtml(item.summary)}</p>

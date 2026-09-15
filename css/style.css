@@ -211,6 +211,25 @@ a:hover {
     border-color: var(--accent-dark);
 }
 
+.publication-logo {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.35rem;
+    background: #ffffff;
+}
+
+.publication-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content-card:hover .publication-logo {
+    background: #ffffff;
+    border-color: var(--accent-dark);
+}
+
 .card-meta {
     color: var(--muted);
     font-size: 0.92rem;
