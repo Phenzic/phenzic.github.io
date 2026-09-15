@@ -321,6 +321,10 @@
   }
 
   function renderItemLink(item, linkLabel) {
+    if (item.private) {
+      return `<p class="text-secondary small mt-4 mb-0"><i class="fas fa-lock me-2" aria-hidden="true"></i>Private documentation</p>`;
+    }
+
     if (!item.url) {
       return `<p class="text-secondary small mt-4 mb-0">Documentation link coming soon.</p>`;
     }
