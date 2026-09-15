@@ -5,7 +5,7 @@ const projects = [
     date: "June 2026",
     sortDate: "2026-06-24",
     description:
-      "A visual market structure lab for perpetual futures. Browse supported perp exchanges, inspect live markets, compare funding and market behavior, and track a browser-local paper portfolio.",
+      "A playground for reading perpetual-futures market structure in real time — compare venues, inspect funding and behaviour, and test ideas with a browser-local paper portfolio.",
     stack: ["Perpetual Futures", "Market Data", "Portfolio Tracking"],
     githubUrl: "",
     demoUrl: "https://perpsplayground.com",
@@ -17,7 +17,7 @@ const projects = [
     date: "March 2026",
     sortDate: "2026-03-30",
     description:
-      "A research and execution system for hourly crypto prediction markets, with live market monitoring, trade bookkeeping, performance tracking, and a local analytics dashboard.",
+      "A research-and-execution setup for hourly crypto prediction markets, with live monitoring, trade records, performance tracking, and a local dashboard for staying honest about the numbers.",
     stack: ["Polymarket", "Trading Data", "Algorithmic Trading"],
     githubUrl: "",
     demoUrl: "",
@@ -29,7 +29,7 @@ const projects = [
     date: "February 2026",
     sortDate: "2026-02-01",
     description:
-      "Contributed to the Python SDK for Lighter, improving developer access to exchange infrastructure and programmatic trading workflows.",
+      "Contributed to Lighter’s Python SDK, making its exchange infrastructure easier to work with programmatically.",
     stack: ["Python", "Exchange APIs", "Trading Infrastructure"],
     githubUrl: "https://github.com/Phenzic/lighter-python",
     demoUrl: "",
@@ -41,7 +41,7 @@ const projects = [
     date: "December 2025",
     sortDate: "2025-12-02",
     description:
-      "A crypto market research engine used to explore market-making and execution behavior across venues including Hyperliquid, Paradex, Lighter, and other derivatives exchanges.",
+      "A research engine for studying market-making and execution across Hyperliquid, Paradex, Lighter, and other derivatives venues.",
     stack: ["Market Making", "Crypto", "Research"],
     githubUrl: "https://github.com/Phenzic/dex-market-maker",
     demoUrl: "",
@@ -53,7 +53,7 @@ const projects = [
     date: "August 2025",
     sortDate: "2025-08-26",
     description:
-      "Contributed to a curated archive of quantitative finance, trading, MEV, market microstructure, execution, and decentralized market research materials.",
+      "A contribution to a carefully assembled research shelf for quant finance, trading, MEV, execution, market microstructure, and decentralized markets.",
     stack: ["Quant Finance", "Trading Research", "Market Microstructure"],
     githubUrl: "https://github.com/Phenzic/quant-scrolls",
     demoUrl: "",
@@ -65,7 +65,7 @@ const projects = [
     date: "August 2025",
     sortDate: "2025-08-09",
     description:
-      "Contributed to a high-performance Rust client library for Paradex with REST and WebSocket connectivity, focused on low-latency exchange API access.",
+      "Contributed to a fast Rust client for Paradex, with REST and WebSocket access built for low-latency exchange workflows.",
     stack: ["Rust", "Exchange APIs", "Trading"],
     githubUrl: "https://github.com/Phenzic/paradex-rs",
     demoUrl: "",
@@ -77,7 +77,7 @@ const projects = [
     date: "July 2025",
     sortDate: "2025-07-08",
     description:
-      "A Solana atomic arbitrage system using streaming transaction data, graph-based routing, token metadata enrichment, persistent logging, and Jupiter swap construction.",
+      "An atomic-arbitrage system for Solana: streaming transaction data, graph-based routing, token enrichment, durable logs, and Jupiter swap construction in one pipeline.",
     stack: ["Solana", "Yellowstone gRPC", "MEV"],
     githubUrl: "https://github.com/Phenzic/solana-atomic-arbs",
     demoUrl: "",
@@ -89,7 +89,7 @@ const projects = [
     date: "September 2024",
     sortDate: "2024-09-30",
     description:
-      "A research-focused project presenting Maven's crypto fund thesis, systematic market analysis, portfolio strategy, and risk-aware digital asset research.",
+      "A research home for Maven’s crypto-fund thesis, systematic market work, portfolio thinking, and risk-aware digital-asset research.",
     stack: ["Crypto", "Portfolio Strategy", "Risk Management"],
     githubUrl: "",
     demoUrl: "https://phenzic.eu.pythonanywhere.com",
@@ -101,7 +101,7 @@ const projects = [
     date: "August 2024",
     sortDate: "2024-08-22",
     description:
-      "Contributed to the official Python API connector for Bybit, supporting HTTP and WebSocket access for exchange integrations.",
+      "Contributed to Bybit’s official Python connector, supporting both HTTP and WebSocket exchange integrations.",
     stack: ["Python", "Exchange APIs", "Trading Infrastructure"],
     githubUrl: "https://github.com/Phenzic/pybit",
     demoUrl: "",
@@ -113,7 +113,7 @@ const projects = [
     date: "January 2024",
     sortDate: "2024-01-04",
     description:
-      "A peer-to-peer, private, permissionless, and decentralized communication protocol inspired by Waku.",
+      "An experiment in private, permissionless peer-to-peer communication, inspired by Waku.",
     stack: ["P2P", "Privacy", "Decentralized Protocols"],
     githubUrl: "https://github.com/Phenzic/GhostNet",
     demoUrl: "",
@@ -125,7 +125,7 @@ const projects = [
     date: "December 14, 2023",
     sortDate: "2023-12-14",
     description:
-      "A tactical strategy game played on an 11x11 grid, blending chess-like positioning with modern warfare units and unique abilities.",
+      "A tactical 11×11 strategy game where chess-like positioning meets modern units and asymmetric abilities.",
     stack: ["Game Design", "Strategy", "Grid Systems"],
     githubUrl: "https://github.com/Phenzic/battlegrid",
     demoUrl: "",
@@ -137,7 +137,7 @@ const projects = [
     date: "October 2022",
     sortDate: "2022-10-10",
     description:
-      "A Dollar Cost Averaging script for automating scheduled cryptocurrency purchases through a Binance account.",
+      "A simple Python script for automating scheduled crypto buys through Binance — built for disciplined DCA.",
     stack: ["Python", "Binance", "Crypto Automation"],
     githubUrl: "https://github.com/Phenzic/binance-dca",
     demoUrl: "",
@@ -149,7 +149,7 @@ const projects = [
     date: "March 2022",
     sortDate: "2022-03-28",
     description:
-      "A command-line tool for downloading anime directly to a local machine.",
+      "A command-line tool for pulling anime straight to a local machine.",
     stack: ["Python", "CLI", "Automation"],
     githubUrl: "https://github.com/Phenzic/animeX-v2",
     demoUrl: "",
@@ -161,7 +161,7 @@ const projects = [
     date: "December 2021",
     sortDate: "2021-12-10",
     description:
-      "A Python script that converts static HTML files into Django or Flask templates by automatically formatting static asset references.",
+      "A Python utility that turns static HTML into Django or Flask-ready templates by cleaning up asset references automatically.",
     stack: ["Python", "Django/Flask", "Developer Tools"],
     githubUrl: "https://github.com/Phenzic/restatic",
     demoUrl: "",
@@ -173,7 +173,7 @@ const projects = [
     date: "November 2021",
     sortDate: "2021-11-26",
     description:
-      "A basic crypto arbitrage platform designed to compare opportunities across centralized and decentralized exchanges.",
+      "An early crypto-arbitrage platform for comparing opportunities across centralized and decentralized exchanges.",
     stack: ["Crypto", "Arbitrage", "MEV"],
     githubUrl: "https://github.com/Phenzic/cc-arbitrage",
     demoUrl: "",
@@ -185,7 +185,7 @@ const projects = [
     date: "October 2021",
     sortDate: "2021-10-26",
     description:
-      "A command-line tool for converting Google Docs files into Markdown.",
+      "A command-line bridge from Google Docs to Markdown.",
     stack: ["Markdown", "Google Docs", "Automation"],
     githubUrl: "https://github.com/Phenzic/docs-to-md-cli",
     demoUrl: "",
@@ -197,7 +197,7 @@ const projects = [
     date: "October 2020",
     sortDate: "2020-10-19",
     description:
-      "A Telegram bot for downloading anime, getting recommendations, and fetching anime information without ads.",
+      "A Telegram bot for anime downloads, recommendations, and information — with none of the ad clutter.",
     stack: ["Telegram Bot", "Python", "Automation"],
     githubUrl: "https://github.com/Phenzic/animehive",
     demoUrl: "",
@@ -209,7 +209,7 @@ const projects = [
     date: "September 2020",
     sortDate: "2020-09-12",
     description:
-      "A Telegram-based job alert system that sends personalized programming job postings to users.",
+      "A Telegram job-alert system that matched programmers with more relevant openings.",
     stack: ["Telegram Bot", "Jobs", "Automation"],
     githubUrl: "https://github.com/Phenzic/devjobhub",
     demoUrl: "",
@@ -221,7 +221,7 @@ const projects = [
     date: "March 2020",
     sortDate: "2020-03-28",
     description:
-      "A security utility for checking whether a password has appeared in known data breaches.",
+      "A security utility for checking whether a password appears in known data breaches.",
     stack: ["Security", "Passwords", "Data Breach Checks"],
     githubUrl: "https://github.com/Phenzic/pwnedpasswords",
     demoUrl: "",
@@ -233,7 +233,7 @@ const projects = [
     date: "December 2019",
     sortDate: "2019-12-30",
     description:
-      "An online platform exploring the use of AI to automate hospital diagnostics, with early work across dashboards, backend integration, and model serving.",
+      "An early exploration of AI-assisted hospital diagnostics, spanning the dashboard, backend integration, and model-serving layers.",
     stack: ["AI", "Healthcare", "Diagnostics"],
     githubUrl: "https://github.com/Phenzic/QuickMed",
     demoUrl: "",
@@ -244,7 +244,7 @@ const projects = [
     type: "Visualization Tool",
     date: "September 2019",
     sortDate: "2019-09-24",
-    description: "A tool for visualizing neural network architectures.",
+    description: "A small tool for making neural-network architectures easier to see and reason about.",
     stack: ["Neural Networks", "Visualization", "Machine Learning"],
     githubUrl: "https://github.com/Phenzic/NNDraw",
     demoUrl: "",
@@ -256,7 +256,7 @@ const projects = [
     date: "September 2019",
     sortDate: "2019-09-19",
     description:
-      "A Django web application for converting images between formats including PNG, JPEG, GIF, TIFF, WebP, PDF, and more.",
+      "A Django utility for converting between PNG, JPEG, GIF, TIFF, WebP, PDF, and other image formats.",
     stack: ["Django", "Image Processing", "Web App"],
     githubUrl: "https://github.com/Phenzic/Im-Conv",
     demoUrl: "",
@@ -268,7 +268,7 @@ const projects = [
     date: "September 2019",
     sortDate: "2019-09-11",
     description:
-      "A Python CLI password manager for generating, storing, and retrieving encrypted passwords using SQLite and encryption primitives.",
+      "A Python CLI password manager for generating, encrypting, storing, and retrieving credentials with SQLite.",
     stack: ["Python", "Encryption", "Security"],
     githubUrl: "https://github.com/Phenzic/PVault",
     demoUrl: "",
@@ -280,7 +280,7 @@ const projects = [
     date: "September 2019",
     sortDate: "2019-09-08",
     description:
-      "A certificate generation tool that places participant data onto image templates using CSV inputs, built to remove repetitive manual certificate design work.",
+      "A certificate generator that maps CSV participant data onto image templates and removes the repetitive manual work.",
     stack: ["Python", "Image Processing", "Automation"],
     githubUrl: "https://github.com/Phenzic/Cert-Gen",
     demoUrl: "",
@@ -292,7 +292,7 @@ const projects = [
     date: "August 2019",
     sortDate: "2019-08-15",
     description:
-      "A lightweight NoSQL-style database library implemented with JSON-based data storage.",
+      "A lightweight, JSON-backed database library — an early experiment in making NoSQL feel approachable.",
     stack: ["Python", "NoSQL", "Database"],
     githubUrl: "https://github.com/Phenzic/HashDB",
     demoUrl: "",
@@ -304,7 +304,7 @@ const projects = [
     date: "August 2019",
     sortDate: "2019-08-12",
     description:
-      "A browser-based viewer for Jupyter Notebook files, letting users inspect notebook contents without launching Anaconda or Jupyter locally.",
+      "A browser-based Jupyter Notebook viewer for inspecting notebooks without firing up Anaconda or Jupyter locally.",
     stack: ["Jupyter", "Browser Tool", "Developer Tools"],
     githubUrl: "https://github.com/Phenzic/IPYNB-viewer",
     demoUrl: "",

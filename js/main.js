@@ -3,6 +3,11 @@
     { key: "home", label: "Home", href: "index.html" },
     { key: "projects", label: "Projects", href: "projects.html" },
     { key: "writing", label: "Writing", href: "writing.html" },
+    {
+      key: "documentation",
+      label: "Documentation",
+      href: "documentation.html",
+    },
     { key: "timeline", label: "Timeline", href: "timeline.html" },
   ];
 
@@ -252,7 +257,19 @@
       .join("");
   }
 
-  function renderWritingCards(target, items) {
+  function renderItemLink(item, linkLabel) {
+    if (!item.url) {
+      return `<p class="text-secondary small mt-4 mb-0">Documentation link coming soon.</p>`;
+    }
+
+    return `
+      <a class="btn btn-outline-primary mt-4" href="${escapeHtml(item.url)}"${linkAttributes(item.url)}>
+        <i class="fas fa-arrow-right me-2" aria-hidden="true"></i>${escapeHtml(linkLabel)}
+      </a>
+    `;
+  }
+
+  function renderWritingCards(target, items, linkLabel = "Read Article") {
     if (!items.length) {
       renderEmpty(target, "No articles match your filter.");
       return;
@@ -267,9 +284,7 @@
           <h3 class="h4 mb-3">${escapeHtml(item.title)}</h3>
           <p class="text-secondary">${escapeHtml(item.summary)}</p>
           <div class="d-flex flex-wrap gap-2 mt-4">${renderTags(item.tags)}</div>
-          <a class="btn btn-outline-primary mt-4" href="${escapeHtml(item.url)}"${linkAttributes(item.url)}>
-            <i class="fas fa-arrow-right me-2" aria-hidden="true"></i>Read Article
-          </a>
+          ${renderItemLink(item, linkLabel)}
         </article>
       </div>
     `,

@@ -1,446 +1,259 @@
 const writingItems = [
   {
-    title: "How to Build and Deploy a Solana Program Using Pinocchio",
-    platform: "GitHub Gist",
-    date: "August 2025",
-    sortDate: "2025-08-07",
+    title: "Why your environment variables aren't safe",
+    platform: "Flutterwave Engineering",
+    date: "February 2025",
+    sortDate: "2025-02-27",
     summary:
-      "A hands-on guide to building, structuring, deploying, and integrating a low-level Solana program using the Pinocchio Rust library.",
-    tags: ["Solana", "Rust", "Blockchain Development"],
-    url: "https://gist.github.com/Phenzic/52ccaaf5752e6829b29646620d1a9ce7",
+      "A security-focused guide on why environment variables alone are not enough to protect secrets in production applications.",
+    tags: ["Security", "Fintech", "DevOps"],
+    url: "https://dev.to/flutterwaveeng/why-your-environment-variables-arent-safe-4pjo",
+    featured: true,
+  },
+  {
+    title: "Here's How Standardization Can Fix the Identity Security Problem",
+    platform: "The New Stack",
+    date: "February 2025",
+    sortDate: "2025-02-05",
+    summary:
+      "An essay on how standardized identity practices can reduce fragmentation and improve security across modern software systems.",
+    tags: ["Security", "Identity", "DevOps"],
+    url: "https://thenewstack.io/heres-how-standardization-can-fix-the-identity-security-problem/",
+    featured: true,
+  },
+  {
+    title: "From Code to Cloud: Deploying your Flutter Application to Globe",
+    platform: "DEV Community",
+    date: "January 2025",
+    sortDate: "2025-01-16",
+    summary:
+      "A walkthrough for deploying a Flutter application to Globe, covering build setup, configuration, and release workflow.",
+    tags: ["Flutter", "Mobile", "Cloud", "Tutorial"],
+    url: "https://dev.to/phenzic/from-code-to-cloud-deploying-your-flutter-application-to-globe-2nc",
+    featured: false,
+  },
+  {
+    title: "Getting Started with PAIMA and Scroll",
+    platform: "Hashnode",
+    date: "February 2024",
+    sortDate: "2024-02-08",
+    summary:
+      "An introduction to PAIMA, an app-specific L2 framework for onchain games, with a practical getting-started path on Scroll.",
+    tags: ["Web3", "Scroll", "Gaming", "Tutorial"],
+    url: "https://phensics.hashnode.dev/getting-started-with-paima-and-scroll",
+    featured: true,
+  },
+  {
+    title: "Building a DID Starter Dapp with Spruce and NextJs",
+    platform: "Hashnode",
+    date: "February 2024",
+    sortDate: "2024-02-06",
+    summary:
+      "A tutorial on building a decentralized identity starter app using SpruceID tooling and Next.js.",
+    tags: ["Web3", "Identity", "Next.js", "Tutorial"],
+    url: "https://phensics.hashnode.dev/building-a-did-dapp-with-spruce-and-nextjs",
     featured: false,
   },
   {
     title:
-      "Reducing Global Payment Friction with Stablecoins, Blockchains, and Solana",
-    platform: "Medium",
-    date: "June 2025",
-    sortDate: "2025-06-06",
-    summary:
-      "A research-focused article exploring how stablecoins and Solana can reduce cross-border payment friction, improve settlement speed, and expand financial access.",
-    tags: ["Solana", "Stablecoins", "Payments"],
-    url: "https://medium.com/@hrknsinst/reducing-global-payment-friction-with-stablecoins-blockchains-and-solana-edfad5e83e04",
-    featured: true,
-  },
-  {
-    title: "SIMD-0204: Building the Foundation for Slashing on Solana",
+      "How to build a ZK-Proof Voting Contract on The Scroll Network with Noir",
     platform: "Hashnode",
-    date: "May 2025",
-    sortDate: "2025-05-10",
+    date: "February 2024",
+    sortDate: "2024-02-06",
     summary:
-      "An analysis of Solana’s SIMD-0204 proposal and how slashing could strengthen validator accountability and network security.",
-    tags: ["Solana", "Validators", "Protocol Research"],
-    url: "https://phenzic.hashnode.dev/simd-0204-building-the-foundation-for-slashing-on-solana",
+      "A step-by-step guide to building a zero-knowledge voting contract on Scroll using Noir.",
+    tags: ["Web3", "Scroll", "ZK", "Solidity"],
+    url: "https://phensics.hashnode.dev/build-a-zk-proof-voting-contract-with-noir-on-scroll-sapolia",
     featured: false,
   },
   {
-    title: "Solana at Web2 Speed: Real-Time Performance Without Fragmentation",
+    title:
+      "How to Create and Call On-Chain Contracts with HardHat on the Scroll Network",
     platform: "Hashnode",
-    date: "May 2025",
-    sortDate: "2025-05-07",
-    summary:
-      "A research article on Solana’s real-time performance goals, covering latency, throughput, responsiveness, and infrastructure for consumer-grade blockchain apps.",
-    tags: ["Solana", "Performance", "Web3 Infrastructure"],
-    url: "https://phenzic.hashnode.dev/solana-at-web2-speed-real-time-performance-without-fragmentation",
-    featured: true,
-  },
-  {
-    title: "Starknet Improvement Proposals (SNIPs)",
-    platform: "Hashnode",
-    date: "April 2025",
-    sortDate: "2025-04-24",
-    summary:
-      "An overview of Starknet Improvement Proposals and how they support protocol governance, ecosystem coordination, and network evolution.",
-    tags: ["Starknet", "Governance", "Protocol Research"],
-    url: "https://phenzic.hashnode.dev/starknet-improvement-proposals-snips",
-    featured: false,
-  },
-  {
-    title: "Decentralizing Starknet: Architecture, Plans, and MEV Impact",
-    platform: "DEV Community",
-    date: "September 2024",
-    sortDate: "2024-09-11",
-    summary:
-      "An exploration of Starknet’s decentralization roadmap, sequencer architecture, and the potential impact of decentralization on MEV dynamics.",
-    tags: ["Starknet", "MEV", "Blockchain Architecture"],
-    url: "https://dev.to/phenzic/decentralizing-starknet-architecture-plans-and-mev-impact-7ck",
-    featured: true,
-  },
-  {
-    title: "Queries to Insights: Visualizing Starknet Data with Dune",
-    platform: "DEV Community",
-    date: "August 2024",
-    sortDate: "2024-08-09",
-    summary:
-      "A practical guide to transforming Starknet on-chain data into dashboards and visual insights using Dune’s querying and visualization tools.",
-    tags: ["Starknet", "Dune Analytics", "Onchain Data"],
-    url: "https://dev.to/phenzic/queries-to-insights-visualizing-starknet-data-with-dune-j8p",
-    featured: false,
-  },
-  {
-    title: "Starknet Protocols: Key Features and MEV Opportunities",
-    platform: "DEV Community",
-    date: "July 2024",
-    sortDate: "2024-07-31",
-    summary:
-      "A survey of Starknet protocols and decentralized applications, highlighting their core features and potential MEV opportunities.",
-    tags: ["Starknet", "DeFi", "MEV"],
-    url: "https://dev.to/phenzic/starknet-protocols-key-features-and-mev-opportunities-574i",
-    featured: false,
-  },
-  {
-    title: "Introduction to MEV on Starknet",
-    platform: "DEV Community",
-    date: "July 2024",
-    sortDate: "2024-07-25",
-    summary:
-      "An introductory article explaining maximal extractable value, common MEV strategies, and how MEV applies to Starknet’s Layer 2 ecosystem.",
-    tags: ["Starknet", "MEV", "Blockchain"],
-    url: "https://dev.to/phenzic/introduction-to-mev-on-starknet-1o0l",
-    featured: false,
-  },
-  {
-    title: "The state of Rust GUI libraries",
-    platform: "LogRocket",
     date: "January 2024",
-    sortDate: "2024-01-03",
+    sortDate: "2024-01-30",
     summary:
-      "A comparison of Rust GUI libraries and frameworks, including Tauri, Druid, Xilem, Slint, gtk-rs, iced, egui, and Yew.",
-    tags: ["Rust", "GUI Development", "Frontend Tooling"],
-    url: "https://blog.logrocket.com/state-rust-gui-libraries",
+      "A practical Hardhat tutorial for deploying and interacting with smart contracts on Scroll testnet.",
+    tags: ["Web3", "Scroll", "Hardhat", "Tutorial"],
+    url: "https://phensics.hashnode.dev/calling-on-chain-contracts-with-hardhat-on-scroll-testnet",
     featured: false,
   },
   {
-    title: "Best methods for unzipping files in Node.js",
-    platform: "LogRocket",
-    date: "June 2023",
-    sortDate: "2023-06-02",
+    title:
+      "Solving Git Submodule Error In Foundry Project: 'git submodule exited with code 1 | 128'",
+    platform: "Hashnode",
+    date: "January 2024",
+    sortDate: "2024-01-22",
     summary:
-      "A practical comparison of Node.js packages and methods for extracting ZIP files, including decompress, adm-zip, zlib, unzipper, and jszip.",
-    tags: ["Node.js", "File Handling", "JavaScript"],
-    url: "https://blog.logrocket.com/best-methods-unzipping-files-node-js/",
+      "A troubleshooting guide for resolving common git submodule failures when working with Foundry projects.",
+    tags: ["Foundry", "DevTools", "Git", "Tutorial"],
+    url: "https://phensics.hashnode.dev/solving-git-submodule-error-in-foundry-project-git-submodule-exited-with-code-1-128",
     featured: false,
   },
   {
-    title: "Create and manage windows in your Rust app with Winit",
-    platform: "LogRocket",
-    date: "May 2023",
-    sortDate: "2023-05-15",
+    title: "How To Integrate Direct Card Payment on Your Website Using Flutterwave",
+    platform: "Flutterwave Engineering",
+    date: "November 2024",
+    sortDate: "2024-11-27",
     summary:
-      "A Rust tutorial introducing Winit for creating windows, handling input, and building cross-platform GUI or game-development foundations.",
-    tags: ["Rust", "Winit", "GUI Development"],
-    url: "https://blog.logrocket.com/create-manage-windows-rust-app-with-winit/",
+      "A developer guide to integrating Flutterwave direct card payments into a website checkout flow.",
+    tags: ["Fintech", "Payments", "Tutorial", "API"],
+    url: "https://dev.to/flutterwaveeng/how-to-integrate-direct-card-payment-on-your-website-using-flutterwave-hg8",
     featured: false,
   },
   {
-    title: "Build an application with Node.js and PouchDB",
-    platform: "LogRocket",
-    date: "April 2023",
-    sortDate: "2023-04-19",
+    title: "Understand what JavaScript deobfuscation is in web scraping",
+    platform: "DEV Community",
+    date: "November 2024",
+    sortDate: "2024-11-18",
     summary:
-      "A tutorial on building a Node.js application with PouchDB, covering database setup and CRUD endpoints.",
-    tags: ["Node.js", "PouchDB", "CRUD APIs"],
-    url: "https://blog.logrocket.com/build-application-with-node-js-pouchdb/",
+      "An explainer on JavaScript deobfuscation techniques and why they matter when scraping dynamic websites.",
+    tags: ["Web Scraping", "JavaScript", "Tutorial"],
+    url: "https://dev.to/phenzic/understand-what-javascript-deobfuscation-is-in-web-scraping-1o24",
     featured: false,
   },
   {
-    title: "How to build a blockchain with Go",
-    platform: "LogRocket",
-    date: "March 2023",
-    sortDate: "2023-03-30",
+    title:
+      "How to Build a Product Scraper for Infinite Scroll Websites using ZenRows Web Scraper",
+    platform: "DEV Community",
+    date: "November 2024",
+    sortDate: "2024-11-18",
     summary:
-      "A Go tutorial explaining blockchain fundamentals by building blocks, hashes, mining logic, transactions, and chain validation.",
-    tags: ["Golang", "Blockchain", "Backend Development"],
-    url: "https://blog.logrocket.com/build-blockchain-with-go",
+      "A hands-on tutorial for scraping infinite-scroll product listings with ZenRows and handling pagination challenges.",
+    tags: ["Web Scraping", "Python", "Tutorial"],
+    url: "https://dev.to/phenzic/how-to-build-a-product-scraper-for-infinite-scroll-websites-using-zenrows-web-scraper-549i",
     featured: false,
   },
   {
-    title: "Best GUI frameworks for Go",
-    platform: "LogRocket",
-    date: "March 2023",
-    sortDate: "2023-03-10",
+    title: "How to Integrate a Payment Gateway in an E-commerce Application",
+    platform: "Flutterwave Engineering",
+    date: "October 2024",
+    sortDate: "2024-10-15",
     summary:
-      "A comparison of Go GUI frameworks, including go-gtk, qt, fyne, walk, and gioui, with guidance on choosing between them.",
-    tags: ["Golang", "GUI Development", "Frameworks"],
-    url: "https://blog.logrocket.com/best-gui-frameworks-go/",
+      "A step-by-step guide to adding payment gateway integration to an e-commerce application.",
+    tags: ["Fintech", "Payments", "E-commerce", "Tutorial"],
+    url: "https://dev.to/flutterwaveeng/how-to-integrate-a-payment-gateway-in-an-e-commerce-application-28ji",
     featured: false,
   },
   {
-    title: "Go migration guide: Node.js, Python, and Rust",
-    platform: "LogRocket",
-    date: "January 2023",
-    sortDate: "2023-01-26",
+    title: "Transaction Verification in Fintech Applications: A Step-By-Step Guide",
+    platform: "Flutterwave Engineering",
+    date: "September 2024",
+    sortDate: "2024-09-17",
     summary:
-      "A migration-focused guide comparing how teams can move codebases and concepts from Node.js, Python, and Rust into Go.",
-    tags: ["Golang", "Migration", "Backend Development"],
-    url: "https://blog.logrocket.com/go-migration-guide-node-js-python-rust/",
+      "A practical guide to verifying transactions in fintech apps, covering flows, edge cases, and developer checks.",
+    tags: ["Fintech", "Payments", "Tutorial"],
+    url: "https://dev.to/flutterwaveeng/transaction-verification-in-fintech-applications-a-step-by-step-guide-213j",
     featured: false,
   },
   {
-    title: "Leverage Go workspaces for multi-module local development",
-    platform: "LogRocket",
-    date: "January 2023",
-    sortDate: "2023-01-18",
+    title: "A Developer's Guide to Verifying Customer Financial Data in Nigeria",
+    platform: "Flutterwave Engineering",
+    date: "September 2024",
+    sortDate: "2024-09-09",
     summary:
-      "A guide to Go workspaces for managing multi-module projects, local development, version control, and open source collaboration.",
-    tags: ["Golang", "Workspaces", "Developer Tooling"],
-    url: "https://blog.logrocket.com/go-workspaces-multi-module-local-development/",
+      "A Nigeria-focused developer guide to verifying customer financial data for compliance and onboarding workflows.",
+    tags: ["Fintech", "Payments", "Nigeria", "Tutorial"],
+    url: "https://dev.to/flutterwaveeng/a-developers-guide-to-verifying-customer-financial-data-in-nigeria-37oj",
     featured: false,
   },
   {
-    title: "Swift vs. Rust: Comparison guide",
-    platform: "LogRocket",
-    date: "October 2022",
-    sortDate: "2022-10-27",
+    title: "The Amazing SQL Server Data Types (And When to Use Them)",
+    platform: "Adam the Automator",
+    date: "2023",
+    sortDate: "2023-05-01",
     summary:
-      "A comparison of Swift and Rust, covering language features, safety, performance, expressivity, advantages, and tradeoffs.",
-    tags: ["Rust", "Swift", "Programming Languages"],
-    url: "https://blog.logrocket.com/swift-vs-rust-comparison-guide/",
+      "A tutorial on SQL Server data types, when to use each one, and how to choose the right type for your schema.",
+    tags: ["SQL Server", "Databases", "Tutorial"],
+    url: "https://adamtheautomator.com/sql-server-data-types/",
     featured: false,
   },
   {
-    title: "Comparing Rust and Nim",
-    platform: "LogRocket",
-    date: "October 2022",
-    sortDate: "2022-10-07",
+    title: "Trusting Veeam AWS Backup to Protect Files",
+    platform: "Adam the Automator",
+    date: "2023",
+    sortDate: "2023-04-01",
     summary:
-      "A language comparison covering Rust and Nim features, use cases, interoperability, memory management, and developer experience.",
-    tags: ["Rust", "Nim", "Programming Languages"],
-    url: "https://blog.logrocket.com/comparing-rust-nim/",
+      "A walkthrough of using Veeam on AWS to back up and protect files in cloud infrastructure.",
+    tags: ["AWS", "Backup", "DevOps", "Tutorial"],
+    url: "https://adamtheautomator.com/veeam-aws/",
     featured: false,
   },
   {
-    title: "Integrating MongoDB into Go applications",
-    platform: "LogRocket",
+    title: "Automating Tasks Using Bash Scripts and Cron Jobs with AWS",
+    platform: "Adam the Automator",
+    date: "2023",
+    sortDate: "2023-03-01",
+    summary:
+      "A tutorial on automating routine AWS tasks with Bash scripts and scheduled cron jobs.",
+    tags: ["AWS", "Bash", "Automation", "Tutorial"],
+    url: "https://adamtheautomator.com/automating-tasks/",
+    featured: false,
+  },
+  {
+    title: "Deploying a Smart Contract Using EthersJs and Ganache",
+    platform: "Hashnode",
     date: "September 2022",
-    sortDate: "2022-09-23",
+    sortDate: "2022-09-30",
     summary:
-      "A tutorial on connecting Go applications to MongoDB and performing CRUD operations using the official MongoDB Go driver.",
-    tags: ["Golang", "MongoDB", "Database"],
-    url: "https://blog.logrocket.com/integrating-mongodb-go-applications",
+      "A beginner-friendly guide to deploying a smart contract locally using Ethers.js, solc, and Ganache.",
+    tags: ["Web3", "Ethereum", "Smart Contracts", "Tutorial"],
+    url: "https://phensics.hashnode.dev/deploying-a-smart-contract-using-ethersjs-and-ganache",
     featured: false,
   },
   {
-    title: "Exploring Carbon, the new superset of C++",
-    platform: "LogRocket",
-    date: "August 2022",
-    sortDate: "2022-08-26",
-    summary:
-      "An introduction to Carbon, covering its goals as a C++ successor, language features, interoperability, memory safety, and syntax.",
-    tags: ["Carbon", "C++", "Programming Languages"],
-    url: "https://blog.logrocket.com/exploring-carbon-new-superset-c-plus-plus",
-    featured: false,
-  },
-  {
-    title: "Using CSS subgrids with container queries",
-    platform: "LogRocket",
+    title: "How to create a Webex Clone With 100ms",
+    platform: "100ms",
     date: "June 2022",
-    sortDate: "2022-06-29",
+    sortDate: "2022-06-25",
     summary:
-      "A frontend tutorial explaining CSS subgrid and container queries for building more adaptive, responsive layouts.",
-    tags: ["CSS", "Responsive Design", "Frontend Development"],
-    url: "https://blog.logrocket.com/using-css-subgrids-container-queries/",
+      "A tutorial on building a Webex-style video conferencing app using the 100ms JavaScript SDK.",
+    tags: ["WebRTC", "JavaScript", "Video", "Tutorial"],
+    url: "https://www.100ms.live/blog/webex-clone",
     featured: false,
   },
   {
-    title: "Comparing tools for optimizing performance in React",
-    platform: "LogRocket",
+    title: "Solving The Oracle Problem",
+    platform: "Hashnode",
     date: "June 2022",
-    sortDate: "2022-06-10",
+    sortDate: "2022-06-24",
     summary:
-      "A comparison of React performance optimization tools and techniques, including the Profiler API, React.memo, and React Developer Tools.",
-    tags: ["React", "Performance", "Frontend Development"],
-    url: "https://blog.logrocket.com/comparing-tools-optimizing-performance-react/",
+      "An introduction to blockchain oracle design and how oracles bridge onchain contracts with offchain data.",
+    tags: ["Web3", "Oracles", "Smart Contracts"],
+    url: "https://phensics.hashnode.dev/solving-the-oracle-problem",
     featured: false,
   },
   {
-    title: "How to create a Solana wallet with Go",
-    platform: "LogRocket",
-    date: "October 2021",
-    sortDate: "2021-10-25",
+    title: "The Basic Solidity Guide",
+    platform: "Hashnode",
+    date: "June 2022",
+    sortDate: "2022-06-24",
     summary:
-      "A blockchain tutorial showing how to use Go to interact with Solana and build a wallet for storing, receiving, and transferring tokens.",
-    tags: ["Golang", "Solana", "Blockchain"],
-    url: "https://blog.logrocket.com/how-to-create-solana-wallet-go/",
+      "A foundational Solidity guide for web developers moving into smart contract development.",
+    tags: ["Web3", "Solidity", "Tutorial"],
+    url: "https://phensics.hashnode.dev/the-basic-solidity-guide",
     featured: false,
   },
   {
-    title: "Documenting Go web APIs with Swag",
-    platform: "LogRocket",
-    date: "October 2021",
-    sortDate: "2021-10-04",
+    title: "Understanding The Decentralized Storage",
+    platform: "Hashnode",
+    date: "June 2022",
+    sortDate: "2022-06-22",
     summary:
-      "A guide to documenting Go web APIs with Swag and Swagger to make API documentation easier to create, maintain, and publish.",
-    tags: ["Golang", "API Documentation", "Swagger"],
-    url: "https://blog.logrocket.com/documenting-go-web-apis-with-swag/",
+      "An overview of decentralized storage systems and why they matter for web3 application design.",
+    tags: ["Web3", "Storage", "IPFS"],
+    url: "https://phensics.hashnode.dev/understanding-the-decentralized-storage",
     featured: false,
   },
   {
-    title: "Build and deploy a web app with Python, Flask, and Doppler",
-    platform: "DEV Community",
-    date: "October 2021",
-    sortDate: "2021-10-04",
-    summary:
-      "A tutorial on building and deploying a Flask application while using Doppler to manage secrets and environment variables.",
-    tags: ["Python", "Flask", "Secrets Management"],
-    url: "https://dev.to/phenzic/build-and-deploy-a-web-app-with-python-flask-and-doppler-9jm",
-    featured: false,
-  },
-  {
-    title: "A comprehensive guide to data structures in Go",
-    platform: "LogRocket",
-    date: "September 2021",
-    sortDate: "2021-09-07",
-    summary:
-      "A Go-focused guide to core data structures, including arrays, slices, maps, structs, and practical code examples.",
-    tags: ["Golang", "Data Structures", "Programming Fundamentals"],
-    url: "https://blog.logrocket.com/comprehensive-guide-data-structures-go/",
-    featured: false,
-  },
-  {
-    title: "Build a profanity filter API with GraphQL",
-    platform: "LogRocket",
-    date: "August 2021",
-    sortDate: "2021-08-05",
-    summary:
-      "A tutorial on building a GraphQL API with Python and Flask to detect and filter profanity in user-generated text.",
-    tags: ["Python", "GraphQL", "API Development"],
-    url: "https://blog.logrocket.com/build-profanity-filter-api-graphql/",
-    featured: false,
-  },
-  {
-    title: "Implementing User Authentication in a Python Application",
-    platform: "LoginRadius",
-    date: "July 2021",
-    sortDate: "2021-07-07",
-    summary:
-      "A tutorial on implementing authentication and identity management in a Python Flask application using LoginRadius.",
-    tags: ["Python", "Authentication", "Flask"],
-    url: "https://www.loginradius.com/blog/engineering/guest-post/user-authentication-in-python",
-    featured: false,
-  },
-  {
-    title: "Building a Contact Manager with Python, Flask, and HarperDB",
-    platform: "DEV Community",
-    date: "June 2021",
-    sortDate: "2021-06-02",
-    summary:
-      "A tutorial on building a Flask contact manager with HarperDB, covering database setup and CRUD functionality.",
-    tags: ["Python", "Flask", "HarperDB"],
-    url: "https://dev.to/phenzic/building-a-contact-manager-with-python-flask-and-harperdb-1h53",
-    featured: false,
-  },
-  {
-    title:
-      "Implementing Two-factor Authentication with Flask, PyOTP, and Fauna",
-    platform: "DEV Community",
-    date: "April 2021",
-    sortDate: "2021-04-23",
-    summary:
-      "A tutorial on adding two-factor authentication to a Flask app using PyOTP and Fauna’s authentication features.",
-    tags: ["Python", "Two-Factor Authentication", "Fauna"],
-    url: "https://dev.to/phenzic/implementing-two-factor-authentication-with-flask-pyotp-and-fauna-4jf3",
-    featured: false,
-  },
-  {
-    title:
-      "How To Implement Biometric 2FA in a Cryptocurrency Wallet with Python, Flask and TypingDNA",
-    platform: "DEV Community",
-    date: "April 2021",
-    sortDate: "2021-04-16",
-    summary:
-      "A security tutorial showing how to add biometric two-factor authentication and risk-based authentication to a Flask cryptocurrency wallet.",
-    tags: ["Python", "Biometric Authentication", "Security"],
-    url: "https://dev.to/typingdna/how-to-implement-biometric-2fa-in-a-cryptocurrency-wallet-with-flask-and-typingdna-3o41",
-    featured: false,
-  },
-  {
-    title: "Managing User Authentication and Sessions with Fauna and Flask",
-    platform: "DEV Community",
-    date: "March 2021",
-    sortDate: "2021-03-25",
-    summary:
-      "A Flask tutorial covering authentication, authorization, user identity, and session management with Fauna.",
-    tags: ["Python", "Authentication", "Fauna"],
-    url: "https://dev.to/phenzic/managing-user-authentication-and-sessions-with-fauna-and-flask-5h5h",
-    featured: false,
-  },
-  {
-    title: "Building Faunabin: A Pastebin Clone with Python and Fauna",
-    platform: "DEV Community",
+    title: "Introduction to R Studio",
+    platform: "Hashnode",
     date: "January 2021",
-    sortDate: "2021-01-19",
+    sortDate: "2021-01-16",
     summary:
-      "A project-based tutorial for building and deploying a Pastebin-style application with Python, Flask, Fauna, and Heroku.",
-    tags: ["Python", "Flask", "Fauna"],
-    url: "https://dev.to/phenzic/building-faunabin-a-pastebin-clone-with-python-and-fauna-436b",
-    featured: false,
-  },
-  {
-    title: "How to Host Flask Applications on Namecheap cPanel",
-    platform: "DEV Community",
-    date: "December 2020",
-    sortDate: "2020-12-27",
-    summary:
-      "A deployment guide showing how to host Flask applications on cPanel-based hosting platforms such as Namecheap.",
-    tags: ["Python", "Flask", "Deployment"],
-    url: "https://dev.to/phenzic/how-to-host-flask-applications-on-namecheap-cpanel-299b",
-    featured: false,
-  },
-  {
-    title: "A Friendly Introduction to Cybersecurity",
-    platform: "DEV Community",
-    date: "December 2020",
-    sortDate: "2020-12-22",
-    summary:
-      "A beginner-friendly introduction to cybersecurity concepts, cyber threats, attacks, and basic defensive thinking.",
-    tags: ["Cybersecurity", "Security", "Programming Fundamentals"],
-    url: "https://dev.to/phenzic/a-friendly-introduction-to-cybersecurity-1e3a",
-    featured: false,
-  },
-  {
-    title: "The Zen of Python; An In-depth Explanation",
-    platform: "DEV Community",
-    date: "December 2020",
-    sortDate: "2020-12-22",
-    summary:
-      "An explanatory guide to the Zen of Python and how its principles shape readable, maintainable Python code.",
-    tags: ["Python", "Programming Fundamentals", "Code Quality"],
-    url: "https://dev.to/phenzic/the-zen-of-python-an-in-depth-explanation-45fm",
-    featured: false,
-  },
-  {
-    title: "Build and Deploy a Serverless URL Shortener with Python and Fauna",
-    platform: "DEV Community",
-    date: "December 2020",
-    sortDate: "2020-12-17",
-    summary:
-      "A project tutorial for building and deploying a serverless URL shortener with Python, Flask, Fauna, and Heroku.",
-    tags: ["Python", "Serverless", "Fauna"],
-    url: "https://dev.to/phenzic/build-and-deploy-a-serverless-url-shortener-with-python-and-fauna-3077",
-    featured: false,
-  },
-  {
-    title: "Building a Telegram Bot with Python and Fauna",
-    platform: "DEV Community",
-    date: "December 2020",
-    sortDate: "2020-12-01",
-    summary:
-      "A tutorial on building a Telegram todo-list bot with Python while using Fauna as a serverless database backend.",
-    tags: ["Python", "Telegram Bot", "Fauna"],
-    url: "https://dev.to/phenzic/building-a-telegram-bot-with-python-and-fauna-494i",
-    featured: false,
-  },
-  {
-    title:
-      "Building a QR Code Identity System with Fernet Symmetric Encryption Algorithm in Python",
-    platform: "DEV Community",
-    date: "April 2020",
-    sortDate: "2020-04-01",
-    summary:
-      "A Python security tutorial showing how to encrypt identity data with Fernet and represent it through QR codes.",
-    tags: ["Python", "Encryption", "Cybersecurity"],
-    url: "https://dev.to/phenzic/building-a-qr-code-identity-system-with-fernet-symmetric-encryption-algorithm-in-python-2ffd",
+      "A beginner introduction to R Studio for statistical computing and data analysis workflows.",
+    tags: ["R", "Data Science", "Tutorial"],
+    url: "https://phensics.hashnode.dev/introduction-to-r-studio",
     featured: false,
   },
 ];
@@ -464,15 +277,20 @@ document.addEventListener("DOMContentLoaded", () => {
         item.title.toLowerCase().includes(searchQuery) ||
         item.summary.toLowerCase().includes(searchQuery) ||
         item.platform.toLowerCase().includes(searchQuery) ||
-        item.tags.some((t) => t.toLowerCase().includes(searchQuery));
+        item.tags.some((tag) => tag.toLowerCase().includes(searchQuery));
 
-      if (!matchesSearch) return false;
+      if (!matchesSearch) {
+        return false;
+      }
 
-      if (activeCategory === "all") return true;
-      const cat = activeCategory.toLowerCase();
+      if (activeCategory === "all") {
+        return true;
+      }
+
+      const category = activeCategory.toLowerCase();
       return (
-        item.platform.toLowerCase().includes(cat) ||
-        item.tags.some((t) => t.toLowerCase().includes(cat))
+        item.platform.toLowerCase().includes(category) ||
+        item.tags.some((tag) => tag.toLowerCase().includes(category))
       );
     });
 
@@ -481,23 +299,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const searchInput = document.getElementById("writing-search");
   if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
-      searchQuery = e.target.value.toLowerCase().trim();
+    searchInput.addEventListener("input", (event) => {
+      searchQuery = event.target.value.toLowerCase().trim();
       applyFilters();
     });
   }
 
   const filterContainer = document.getElementById("writing-filters");
   if (filterContainer) {
-    filterContainer.addEventListener("click", (e) => {
-      const btn = e.target.closest(".filter-btn");
-      if (!btn) return;
+    filterContainer.addEventListener("click", (event) => {
+      const button = event.target.closest(".filter-btn");
+      if (!button) {
+        return;
+      }
 
       filterContainer
         .querySelectorAll(".filter-btn")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      activeCategory = btn.dataset.filter || "all";
+        .forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      activeCategory = button.dataset.filter || "all";
       applyFilters();
     });
   }

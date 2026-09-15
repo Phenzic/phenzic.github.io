@@ -2,18 +2,18 @@ const profile = {
   brandName: "Phenzic",
   displayName: "Mayowa Julius",
   headline:
-    "Software engineer and technical writer building developer platforms, API documentation, and developer experience across fintech and Web3.",
-  bio: "I turn complex systems into clear docs, strong APIs, and better developer onboarding. My work spans developer documentation, DevRel programs, and backend services for payments and blockchain platforms.",
+    "I build, research, and explain the systems shaping money, markets, and the internet — from onchain infrastructure to developer tools.",
+  bio: "I’m Mayowa — a hands-on engineer and technical writer who goes deep enough to build the thing, then makes it make sense for everyone else. I work across crypto markets, Web3 infrastructure, AI, fintech, and developer experience.",
   roles: [
+    "Crypto & Market Infrastructure",
+    "Developer Education",
     "Technical Writing",
-    "Developer Advocacy",
-    "API Documentation",
-    "Developer Experience",
+    "Open Source",
   ],
   stats: [
-    { value: "6+", label: "Years engineering & docs" },
+    { value: "6+", label: "Years building & writing" },
     { value: "100k+", label: "Developers reached" },
-    { value: "200+", label: "Ecosystem partners served" },
+    { value: "200+", label: "Ecosystem partners supported" },
     { value: "12+", label: "Teams & clients" },
   ],
   clients: [
@@ -25,9 +25,9 @@ const profile = {
     "100ms",
   ],
   focus: [
-    "API docs, SDK guides, onboarding, and DevRel programs.",
-    "Docs-as-code systems, information architecture, and content strategy.",
-    "Developer platforms across fintech payments and Web3 ecosystems.",
+    "Building tools and research systems for crypto markets and onchain finance.",
+    "Turning hard technical ideas into docs, guides, and developer experiences that click.",
+    "Following the overlap between AI, financial infrastructure, and open networks.",
   ],
   ctas: [
     {
@@ -77,5 +77,5 @@ const profile = {
     },
   ],
   footerText:
-    "Technical writing, developer advocacy, API documentation, and developer experience.",
+    "Engineering, research, and clear thinking for the next internet.",
 };
