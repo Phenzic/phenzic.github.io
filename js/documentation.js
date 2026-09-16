@@ -30,6 +30,9 @@ const documentationMigrations = [
   review("Vespa", "https://docs.vespa.ai"), review("Shinkei"),
 ];
 
+window.documentationBuilt = documentationBuilt;
+window.documentationMigrations = documentationMigrations;
+
 function setupDocumentationSection({ listId, searchId, filtersId, items, emptyMessage }) {
   const target = document.getElementById(listId);
   if (!target) return;

@@ -234,12 +234,16 @@
     );
 
     const builtDocumentation =
-      typeof documentationBuilt !== "undefined" ? documentationBuilt : [];
-    renderWritingCards(
-      document.getElementById("featured-documentation"),
-      sortRecentFirst(builtDocumentation).slice(0, 3),
-      "View Documentation",
-    );
+      window.documentationBuilt ||
+      (typeof documentationBuilt !== "undefined" ? documentationBuilt : []);
+    const docTarget = document.getElementById("featured-documentation");
+    if (docTarget) {
+      renderWritingCards(
+        docTarget,
+        sortRecentFirst(builtDocumentation).slice(0, 3),
+        "View Documentation",
+      );
+    }
   }
 
   function getPlatformLogo(platform = "") {
@@ -296,6 +300,10 @@
   }
 
   function renderProjectCards(target, items) {
+    if (!target) {
+      return;
+    }
+
     if (!items.length) {
       renderEmpty(target, "No projects match your filter.");
       return;
@@ -346,6 +354,10 @@
   }
 
   function renderWritingCards(target, items, linkLabel = "Read Article") {
+    if (!target) {
+      return;
+    }
+
     if (!items.length) {
       renderEmpty(target, "No articles match your filter.");
       return;
