@@ -232,6 +232,14 @@
       document.getElementById("featured-writing"),
       featured(articleItems),
     );
+
+    const builtDocumentation =
+      typeof documentationBuilt !== "undefined" ? documentationBuilt : [];
+    renderWritingCards(
+      document.getElementById("featured-documentation"),
+      sortRecentFirst(builtDocumentation).slice(0, 3),
+      "View Documentation",
+    );
   }
 
   function getPlatformLogo(platform = "") {
@@ -326,7 +334,8 @@
     }
 
     if (!item.url) {
-      return `<p class="text-secondary small mt-4 mb-0">Documentation link coming soon.</p>`;
+      return `<p class="text-secondary small mt-4 mb-0"><i class="fas fa-lock me-2" aria-hidden="true"></i>Private documentation</p>`;
+      // return `<p class="text-secondary small mt-4 mb-0">Documentation link coming soon.</p>`;
     }
 
     return `
